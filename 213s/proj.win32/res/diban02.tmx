@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="30" tileheight="30">
+ <tileset firstgid="1" name="gamersky_01origin_01_201672218186E7" tilewidth="30" tileheight="30">
+  <image source="../梦际/gamersky_01origin_01_201672218186E7.jpg" trans="fff0d8" width="3840" height="2160"/>
+ </tileset>
+ <layer name="块层 1" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxrYWRgaAXiFhrRLEwMDKxMtKNp5e5R94+6f9T9o+4fdf/gdj8AytV2IQ==
+  </data>
+ </layer>
+</map>

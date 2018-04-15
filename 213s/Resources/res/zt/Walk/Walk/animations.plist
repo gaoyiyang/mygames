@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>animations</key>
+	<dict>
+		<key>running</key>
+		<dict>
+			<key>delay</key>
+			<real>0.05</real>
+			<key>frames</key>
+			<array>
+				<string>walk_0001.png</string>
+				<string>walk_0002.png</string>
+				<string>walk_0003.png</string>
+				<string>walk_0004.png</string>
+				<string>walk_0005.png</string>
+				<string>walk_0006.png</string>
+				<string>walk_0007.png</string>
+				<string>walk_0008.png</string>
+				<string>walk_0009.png</string>
+				<string>walk_0010.png</string>
+				<string>walk_0011.png</string>
+				<string>walk_0012.png</string>
+				<string>walk_0013.png</string>
+				<string>walk_0014.png</string>
+				<string>walk_0015.png</string>
+				<string>walk_0016.png</string>
+				<string>walk_0017.png</string>
+				<string>walk_0018.png</string>
+				<string>walk_0019.png</string>
+				<string>walk_0020.png</string>
+				<string>walk_0021.png</string>
+				<string>walk_0022.png</string>
+				<string>walk_0023.png</string>
+				<string>walk_0024.png</string>
+				<string>walk_0025.png</string>
+				<string>walk_0026.png</string>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

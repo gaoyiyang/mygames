@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="30" tileheight="30">
+ <tileset firstgid="1" name="diban(mutou)" tilewidth="30" tileheight="30">
+  <image source="diban(mutou).png" trans="fff0d8" width="1023" height="540"/>
+ </tileset>
+ <layer name="块层 1" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJzt0tdRAgEUhtHdJsSAuQkVAxiaAAkGtD0UzNCEAVBRm8CIqKeE3Rkfd+aet/u/fbUgCI44pk6DE04545wLLrmiSYtaxN01N9xyR5sOXe554JEeTzzzEmPX55U33vngky8GfDPkh1+C0IXRdyN+U4wyxjgTpJlkimlmmGWO+TD6boFFlsiwzAqrrJElxzobbLIVY5enwDZFSpSpsMMue+xT5YDDGLuoHST9JP0k/ST9/Hc/f3xH5N8=
+  </data>
+ </layer>
+</map>

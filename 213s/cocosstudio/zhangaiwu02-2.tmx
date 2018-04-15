@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="30" tileheight="30">
+ <tileset firstgid="1" name="zhangaiwu02" tilewidth="30" tileheight="30">
+  <image source="zhangaiwu02.png" trans="fff0d8" width="60" height="90"/>
+ </tileset>
+ <layer name="块层 1" width="1" height="1">
+  <data encoding="base64" compression="zlib">
+   eJxjY2BgAAAAHAAH
+  </data>
+ </layer>
+</map>

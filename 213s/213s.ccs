@@ -1,0 +1,246 @@
+<Solution>
+  <PropertyGroup Name="213s" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <PlistImageFolder Image="DemoPlayer0.png" PListFile="DemoPlayer0.plist" Name=".DemoPlayer0_PList.Dir">
+          <PlistImageFile Name="defaultarmature1.png" Key="defaultarmature1.png" />
+          <PlistImageFile Name="defaultarmature2.png" Key="defaultarmature2.png" />
+          <PlistImageFile Name="defaultarmature3.png" Key="defaultarmature3.png" />
+          <PlistImageFile Name="defaultarmature4.png" Key="defaultarmature4.png" />
+          <PlistImageFile Name="defaultarmature5.png" Key="defaultarmature5.png" />
+          <PlistImageFile Name="defaultarmature6.png" Key="defaultarmature6.png" />
+          <PlistImageFile Name="defaultarmature7.png" Key="defaultarmature7.png" />
+          <PlistImageFile Name="defaultarmature8.png" Key="defaultarmature8.png" />
+          <PlistImageFile Name="defaultarmaturehat.png" Key="defaultarmaturehat.png" />
+        </PlistImageFolder>
+        <Folder Name="dt">
+          <TmxFile Name="02(dt).tmx" />
+          <Image Name="za.png" />
+        </Folder>
+        <Folder Name="player">
+          <TTF Name="abc.ttf" />
+        </Folder>
+        <Folder Name="zt">
+          <Image Name="411.jpg" />
+          <Image Name="6598070322239617603.jpg" />
+          <File Name="animations.plist" />
+          <File Name="animations-2.plist" />
+          <Image Name="beishier.png" />
+          <Image Name="blue.png" />
+          <PlistParticleFile Name="boss2.plist" />
+          <Image Name="boss2.png" />
+          <Image Name="cg.png" />
+          <Image Name="change.png" />
+          <Image Name="dongsan.png" />
+          <Image Name="guanghuan0.png" />
+          <Image Name="guanghuan1.png" />
+          <Image Name="jinzhanxiaobing.png" />
+          <Image Name="jinzhanxiaobing_yuan.png" />
+          <Image Name="liaoji0.png" />
+          <Image Name="liaoji1.png" />
+          <Image Name="liaoji2.png" />
+          <Image Name="liaoji3.png" />
+          <Image Name="load_1.png" />
+          <Image Name="nanliu.png" />
+          <Image Name="p1_2_1.png" />
+          <Image Name="p1_2_2.png" />
+          <Image Name="p1_2_3.png" />
+          <Image Name="p1_2_4.png" />
+          <PlistParticleFile Name="particle_texture (1).plist" />
+          <PlistParticleFile Name="particle_texture (2).plist" />
+          <PlistParticleFile Name="particle_texture (3).plist" />
+          <PlistParticleFile Name="particle_texture (4).plist" />
+          <PlistParticleFile Name="particle_texture (5).plist" />
+          <PlistParticleFile Name="particle_texture.plist" />
+          <Image Name="player0_touxiang.png" />
+          <Image Name="player001_touxiang.png" />
+          <Image Name="player002_touxiang.png" />
+          <Image Name="player003_touxiang.png" />
+          <Image Name="QQ20170704000130.png" />
+          <Image Name="red.png" />
+          <Image Name="skill_sz.png" />
+          <Image Name="t01e6b5d7cbf4c23e29.jpg" />
+          <Image Name="wuyingren.png" />
+          <Image Name="xijiu.png" />
+          <Image Name="xue.png" />
+          <Image Name="yello.png" />
+          <Image Name="yuanchengxiaobing.png" />
+          <Image Name="yuanchengxiaobing_yuan.png" />
+          <Image Name="zhuantou_1.png" />
+          <Image Name="zhuantou_2.png" />
+          <Image Name="zhuantou_3.png" />
+          <Image Name="zhuantou_duihuakuang.png" />
+        </Folder>
+        <Image Name="0.01.png" />
+        <Image Name="0.02.png" />
+        <Image Name="0.03.png" />
+        <Image Name="1.png" />
+        <Image Name="1-1.png" />
+        <Image Name="1-2.png" />
+        <Image Name="1-3.png" />
+        <Image Name="1-4.png" />
+        <Image Name="88ca1526d85a4dc29519f8103a66826b.png" />
+        <TTF Name="abc.ttf" />
+        <Project Name="all_buff.csd" Type="Node" />
+        <Project Name="all_jineng.csd" Type="Node" />
+        <Project Name="all_jineng_0.csd" Type="Node" />
+        <Project Name="all_jineng_1.csd" Type="Node" />
+        <Project Name="all_jineng_2.csd" Type="Node" />
+        <Project Name="all_map.csd" Type="Node" />
+        <Project Name="all_player.csd" Type="Node" />
+        <Project Name="AttMove_test1.csd" Type="Node" />
+        <Image Name="blue.png" />
+        <Image Name="blue_2.png" />
+        <Project Name="boss2.csd" Type="Node" />
+        <Project Name="boss2_gjtexiao.csd" Type="Node" />
+        <Image Name="caozuolan.png" />
+        <Image Name="cuozuolan.png" />
+        <Project Name="d1.csd" Type="Node" />
+        <Project Name="d2.csd" Type="Node" />
+        <PlistParticleFile Name="defaultParticle.plist" />
+        <TmxFile Name="diban(mutou).tmx" />
+        <TmxFile Name="diban03.tmx" />
+        <Project Name="duihuakuang1.csd" Type="Node" />
+        <Project Name="fanhui.csd" Type="Node" />
+        <Project Name="gameFlagZ.csd" Type="Node" />
+        <Project Name="gameLose.csd" Type="Scene" />
+        <Project Name="gameWin.csd" Type="Scene" />
+        <Image Name="gongji.png" />
+        <Project Name="guanghuan0.csd" Type="Node" />
+        <Project Name="guanghuan1.csd" Type="Node" />
+        <Image Name="HelloWorld.png" />
+        <Image Name="jineng.png" />
+        <TmxFile Name="kezhuo.tmx" />
+        <Image Name="kezhuo1.png" />
+        <Project Name="Layer.csd" Type="Layer" />
+        <Project Name="Layer1.csd" Type="Layer" />
+        <Project Name="Layer3.csd" Type="Layer" />
+        <Project Name="liaoji0.csd" Type="Node" />
+        <Project Name="liaoji1.csd" Type="Node" />
+        <Project Name="liaoji2.csd" Type="Node" />
+        <Project Name="Load.csd" Type="Layer" />
+        <Project Name="load_1.csd" Type="Layer" />
+        <Project Name="loadingBar.csd" Type="Node" />
+        <Project Name="loadingBarLayer.csd" Type="Layer" />
+        <Project Name="loadingBarNode.csd" Type="Node" />
+        <Project Name="m_cghp.csd" Type="Node" />
+        <Project Name="m_cghp2.csd" Type="Node" />
+        <Project Name="m_gjtexiao.csd" Type="Node" />
+        <Project Name="m_gongji.csd" Type="Node" />
+        <Project Name="m_jineng.csd" Type="Node" />
+        <Project Name="m_loading.csd" Type="Node" />
+        <Project Name="m_loading1.csd" Type="Node" />
+        <Project Name="m_shezhi.csd" Type="Layer" />
+        <Project Name="m_yidong.csd" Type="Node" />
+        <Project Name="m_zhongzhi.csd" Type="Node" />
+        <Project Name="MainScene.csd" Type="Scene" />
+        <Project Name="Map.csd" Type="Scene" />
+        <Project Name="Map02.csd" Type="Scene" />
+        <Project Name="mapScence.csd" Type="Scene" />
+        <Project Name="MapTest.csd" Type="Scene" />
+        <Project Name="MapTest2.csd" Type="Layer" />
+        <Project Name="menu.csd" Type="Layer" />
+        <Project Name="MoveButton_ai.csd" Type="Node" />
+        <Project Name="MoveButton_test1.csd" Type="Node" />
+        <Image Name="n_gongji.png" />
+        <Image Name="n_jineng.png" />
+        <Image Name="n_yidong.png" />
+        <Project Name="Node.csd" Type="Node" />
+        <Project Name="Node1.csd" Type="Node" />
+        <Project Name="Node2_0.csd" Type="Node" />
+        <Project Name="Node3.csd" Type="Node" />
+        <Project Name="Node5.csd" Type="Node" />
+        <Project Name="Node6.csd" Type="Node" />
+        <Project Name="p_change.csd" Type="Node" />
+        <Project Name="p0shezhi.csd" Type="Node" />
+        <Image Name="p1_1.png" />
+        <Project Name="p1shezhi.csd" Type="Node" />
+        <Project Name="p2shezhi.csd" Type="Node" />
+        <Project Name="p3shezhi.csd" Type="Node" />
+        <Project Name="player_f.csd" Type="Node" />
+        <Project Name="player0.csd" Type="Node" />
+        <Image Name="player0.jpg" />
+        <Image Name="player0.png" />
+        <Project Name="player0_sx.csd" Type="Scene" />
+        <Image Name="player001.png" />
+        <Image Name="player002.png" />
+        <Image Name="player003.png" />
+        <Project Name="player1.csd" Type="Node" />
+        <Project Name="player1_sx.csd" Type="Scene" />
+        <Project Name="player2.csd" Type="Node" />
+        <Project Name="player2_sx.csd" Type="Scene" />
+        <Project Name="player3.csd" Type="Node" />
+        <Project Name="player3_sx.csd" Type="Scene" />
+        <PlistInfo Name="Plist.csi" Type="Plist" />
+        <Project Name="powerNode.csd" Type="Node" />
+        <Project Name="Scene.csd" Type="Scene" />
+        <Project Name="Scene_name.csd" Type="Scene" />
+        <Project Name="Scene_set.csd" Type="Scene" />
+        <Project Name="Skeleton.csd" Type="Skeleton" />
+        <Project Name="Skeleton1.csd" Type="Skeleton" />
+        <Project Name="skill_shezhi.csd" Type="Scene" />
+        <Project Name="skill_testSkill1.csd" Type="Node" />
+        <Project Name="skill101.csd" Type="Node" />
+        <Project Name="skill102.csd" Type="Node" />
+        <Project Name="skill103.csd" Type="Node" />
+        <Project Name="skill104.csd" Type="Node" />
+        <Project Name="skill105.csd" Type="Node" />
+        <Project Name="skill106.csd" Type="Node" />
+        <Project Name="skill107.csd" Type="Node" />
+        <Project Name="skill108.csd" Type="Node" />
+        <Project Name="skill109.csd" Type="Node" />
+        <Project Name="skill110.csd" Type="Node" />
+        <Project Name="skill111.csd" Type="Node" />
+        <Project Name="skill112.csd" Type="Node" />
+        <Project Name="skill201.csd" Type="Node" />
+        <Project Name="skill202.csd" Type="Node" />
+        <Project Name="skill203.csd" Type="Node" />
+        <Project Name="skill204.csd" Type="Node" />
+        <Project Name="skill205.csd" Type="Node" />
+        <Project Name="skill206.csd" Type="Node" />
+        <Project Name="skill207.csd" Type="Node" />
+        <Project Name="skill208.csd" Type="Node" />
+        <Project Name="skill209.csd" Type="Node" />
+        <Project Name="skill210.csd" Type="Node" />
+        <Project Name="skill211.csd" Type="Node" />
+        <Project Name="skill212.csd" Type="Node" />
+        <Project Name="skill301.csd" Type="Node" />
+        <Project Name="skill302.csd" Type="Node" />
+        <Project Name="skill303.csd" Type="Node" />
+        <Project Name="skill304.csd" Type="Node" />
+        <Project Name="skill305.csd" Type="Node" />
+        <Project Name="skill306.csd" Type="Node" />
+        <Project Name="skill307.csd" Type="Node" />
+        <Project Name="skill308.csd" Type="Node" />
+        <Project Name="skill309.csd" Type="Node" />
+        <Project Name="skill310.csd" Type="Node" />
+        <Project Name="skill311.csd" Type="Node" />
+        <Project Name="skill312.csd" Type="Node" />
+        <Project Name="skillButtonsLayer.csd" Type="Layer" />
+        <Project Name="skillNum.csd" Type="Node" />
+        <Image Name="sucai01.jpg" />
+        <Image Name="t1_1.png" />
+        <Image Name="t1_2.png" />
+        <Project Name="test1.csd" Type="Node" />
+        <Image Name="test1.png" />
+        <Project Name="test2.csd" Type="Node" />
+        <Image Name="test2.png" />
+        <Project Name="VoidLayer.csd" Type="Layer" />
+        <Project Name="xuetiao.csd" Type="Node" />
+        <Project Name="xuetiao2.csd" Type="Node" />
+        <Project Name="xuetiao3.csd" Type="Node" />
+        <Image Name="yidong.png" />
+        <TmxFile Name="zhangaiwu01.tmx" />
+        <TmxFile Name="zhangaiwu02.tmx" />
+        <TmxFile Name="zhangaiwu02-1.tmx" />
+        <TmxFile Name="zhangaiwu02-2.tmx" />
+        <TmxFile Name="zhangaiwu02-3.tmx" />
+        <TmxFile Name="zhangaiwu02-4.tmx" />
+        <TmxFile Name="zhangaiwu02-5.tmx" />
+        <TmxFile Name="zhangaiwu02-6.tmx" />
+        <Image Name="zhongzhi.png" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

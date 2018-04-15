@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="30" tileheight="30">
+ <tileset firstgid="1" name="sucai01" tilewidth="30" tileheight="30">
+  <image source="sucai01.jpg" trans="fff0d8" width="3840" height="2160"/>
+ </tileset>
+ <layer name="块层 1" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJytlMEOwCAIQ73Ivly/e9nBpGlaUeeB6BSeWHDxlBJgFcZq1jKLxN/ttcQUG/duWsbMcl2xGefGHT6duuGdnBMUs1KHXT1Qe9UnHNM3a9qI/4e3c+7s+4SX1W9Hd+YNHfrEj/d5PnR07xW1dvrj2uAoPvpjXjw6LsYptrs394rzmfUUx6AmSguld2aYSxCfdVf/fjcPweezulh3PaPyxRqp/nwBoCh7mA==
+  </data>
+ </layer>
+</map>

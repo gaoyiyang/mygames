@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="30" tileheight="30">
+ <tileset firstgid="1" name="gamersky_01origin_01_201672218186E7" tilewidth="30" tileheight="30">
+  <image source="../梦际/gamersky_01origin_01_201672218186E7.jpg" width="3840" height="2160"/>
+ </tileset>
+ <tileset firstgid="9217" name="无标题" tilewidth="30" tileheight="30">
+  <image source="无标题.png" trans="fff0d8" width="1152" height="648"/>
+ </tileset>
+ <layer name="块层 2" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFpAJGlaFt/igYBaNgFAwHAACTHwBL
+  </data>
+ </layer>
+ <layer name="块层 1" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJydk0sSBCEIQ1s9uZx8etFUZZ7B/iwoFTGEgG0cRzttXhan9cvn1ozjOX0aX+E+Mc3RgaV+hztfmNbh9g4zPtZBfbrBfMs7xr8e6csY4r7tg+PstN7Vftcb9jn3c/Ou8scG/05/jd/V1fCeWJojkIO6VHUxD/llPtXN6cycTv8Yq+Y6S2429Q/o/wzBcZzdvLIP1SyErIGzmyHGVW9jrHyfzBA1Ve4V/z5W3tSDXKip04h3TmOtvXpHn9PF9YHYbm5d791d9TddzA/fBm5c
+  </data>
+ </layer>
+</map>
