@@ -15,7 +15,12 @@
           <PlistImageFile Name="defaultarmaturehat.png" Key="defaultarmaturehat.png" />
         </PlistImageFolder>
         <Folder Name="dt">
+          <TmxFile Name="00(dt).tmx" />
+          <TmxFile Name="01(dt).tmx" />
           <TmxFile Name="02(dt).tmx" />
+          <TmxFile Name="03(dt).tmx" />
+          <TmxFile Name="04(dt).tmx" />
+          <TmxFile Name="05(dt).tmx" />
           <Image Name="za.png" />
         </Folder>
         <Folder Name="player">
@@ -84,9 +89,6 @@
         <TTF Name="abc.ttf" />
         <Project Name="all_buff.csd" Type="Node" />
         <Project Name="all_jineng.csd" Type="Node" />
-        <Project Name="all_jineng_0.csd" Type="Node" />
-        <Project Name="all_jineng_1.csd" Type="Node" />
-        <Project Name="all_jineng_2.csd" Type="Node" />
         <Project Name="all_map.csd" Type="Node" />
         <Project Name="all_player.csd" Type="Node" />
         <Project Name="AttMove_test1.csd" Type="Node" />
@@ -136,7 +138,12 @@
         <Project Name="m_zhongzhi.csd" Type="Node" />
         <Project Name="MainScene.csd" Type="Scene" />
         <Project Name="Map.csd" Type="Scene" />
+        <Project Name="Map00.csd" Type="Scene" />
+        <Project Name="Map01.csd" Type="Scene" />
         <Project Name="Map02.csd" Type="Scene" />
+        <Project Name="Map03.csd" Type="Scene" />
+        <Project Name="Map04.csd" Type="Scene" />
+        <Project Name="Map05.csd" Type="Scene" />
         <Project Name="mapScence.csd" Type="Scene" />
         <Project Name="MapTest.csd" Type="Scene" />
         <Project Name="MapTest2.csd" Type="Layer" />
@@ -185,14 +192,6 @@
         <Project Name="skill102.csd" Type="Node" />
         <Project Name="skill103.csd" Type="Node" />
         <Project Name="skill104.csd" Type="Node" />
-        <Project Name="skill105.csd" Type="Node" />
-        <Project Name="skill106.csd" Type="Node" />
-        <Project Name="skill107.csd" Type="Node" />
-        <Project Name="skill108.csd" Type="Node" />
-        <Project Name="skill109.csd" Type="Node" />
-        <Project Name="skill110.csd" Type="Node" />
-        <Project Name="skill111.csd" Type="Node" />
-        <Project Name="skill112.csd" Type="Node" />
         <Project Name="skill201.csd" Type="Node" />
         <Project Name="skill202.csd" Type="Node" />
         <Project Name="skill203.csd" Type="Node" />
@@ -200,23 +199,10 @@
         <Project Name="skill205.csd" Type="Node" />
         <Project Name="skill206.csd" Type="Node" />
         <Project Name="skill207.csd" Type="Node" />
-        <Project Name="skill208.csd" Type="Node" />
-        <Project Name="skill209.csd" Type="Node" />
-        <Project Name="skill210.csd" Type="Node" />
-        <Project Name="skill211.csd" Type="Node" />
-        <Project Name="skill212.csd" Type="Node" />
         <Project Name="skill301.csd" Type="Node" />
         <Project Name="skill302.csd" Type="Node" />
         <Project Name="skill303.csd" Type="Node" />
         <Project Name="skill304.csd" Type="Node" />
-        <Project Name="skill305.csd" Type="Node" />
-        <Project Name="skill306.csd" Type="Node" />
-        <Project Name="skill307.csd" Type="Node" />
-        <Project Name="skill308.csd" Type="Node" />
-        <Project Name="skill309.csd" Type="Node" />
-        <Project Name="skill310.csd" Type="Node" />
-        <Project Name="skill311.csd" Type="Node" />
-        <Project Name="skill312.csd" Type="Node" />
         <Project Name="skillButtonsLayer.csd" Type="Layer" />
         <Project Name="skillNum.csd" Type="Node" />
         <Image Name="sucai01.jpg" />

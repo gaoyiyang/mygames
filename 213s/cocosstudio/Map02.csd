@@ -23,7 +23,7 @@
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.1875" Y="0.1667" />
-            <PreSize X="0.0479" Y="0.0852" />
+            <PreSize X="0.0313" Y="0.0556" />
             <FileData Type="Normal" Path="dt/za.png" Plist="" />
             <BlendFunc Src="770" Dst="771" />
           </AbstractNodeData>
