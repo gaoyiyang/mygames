@@ -21,6 +21,9 @@
           <TmxFile Name="03(dt).tmx" />
           <TmxFile Name="04(dt).tmx" />
           <TmxFile Name="05(dt).tmx" />
+          <TmxFile Name="06(dt).tmx" />
+          <TmxFile Name="07(dt).tmx" />
+          <TmxFile Name="08(dt).tmx" />
           <Image Name="za.png" />
         </Folder>
         <Folder Name="player">
@@ -226,6 +229,9 @@
         <TmxFile Name="zhangaiwu02-5.tmx" />
         <TmxFile Name="zhangaiwu02-6.tmx" />
         <Image Name="zhongzhi.png" />
+        <Project Name="Map06.csd" Type="Scene" />
+        <Project Name="Map07.csd" Type="Scene" />
+        <Project Name="Map08.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>

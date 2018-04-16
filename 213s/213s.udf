@@ -33,8 +33,15 @@
         <OpenedDocuments>
           <FilePathData Path="Map04.csd" />
           <FilePathData Path="Map05.csd" />
+          <FilePathData Path="Map06.csd" />
+          <FilePathData Path="Map03.csd" />
+          <FilePathData Path="Map02.csd" />
+          <FilePathData Path="Map01.csd" />
+          <FilePathData Path="Map00.csd" />
+          <FilePathData Path="Map07.csd" />
+          <FilePathData Path="Map08.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Map05.csd" />
+        <ActiveDocument Path="Map08.csd" />
       </Value>
     </Item>
   </Properties>
