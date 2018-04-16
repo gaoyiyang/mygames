@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="24" height="18" tilewidth="30" tileheight="30">
+ <tileset firstgid="1" name="00(dt)" tilewidth="30" tileheight="30">
+  <image source="00(dt).png" width="720" height="540"/>
+ </tileset>
+ <layer name="块层 1" width="24" height="18">
+  <data encoding="base64" compression="zlib">
+   eJzdzEOUkGEYhuEmbrLdJpuTjcnWzGTMZNvW1Ey2ucl2m2y3yXab7Kt1/7ZN7/muzXPOd8eL9/9cSUoRSmnKUJZylKcCFalEZapQlWpUpwY1qUVYQL8+DWhIIxrThKY0ozktaEkrWhNOBJG0oS3taB/Q70JXooimG93pQU960Zs+9KUf/RnAQAYxmCEMDeiPYjRjGMs4xjOBiUxiMlOYyjSmM4MYZjKLWOIC+vNZwEIWsZglLGUZy1nBSlaxmjWsZR3r2cBGNgX0N7OFrWxjOzvYyS52s4e97GM/BzjIIQ5zhKMcC+gf5wQnOcVpznCWc5znAhe5xGWucJVrXOcGN7kV0L/NHe5yj/s84CGPeMwTnvKM57zgJa94zRve8i6g/54PfOQTn/nCV77xnR/85NefDyEe8UlAQhKRmCQhf/eT2pKRnBSkJBWpSUNa0pGeDGQkE5nJQlaykZ0cAf2ctlzkJg95yUd+ClCQQhSmCEUpRnFKUJJShFI6oF/BVpFKVKYKValGdWpQk1qEUZs61KUe9WlAQxoF9JvbWtCSVrQmnAgiaUNb2tGeDnSkE53pQleiiA7o97L1pg996Ud/BjCQQQxmCEMZxnBGMJJRjGYMYwP6k2yTmcJUpjGdGcQwk1nEEsds5jCXecxnAQtZFND/F/cb12eNcw==
+  </data>
+ </layer>
+</map>
