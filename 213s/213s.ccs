@@ -45,6 +45,7 @@
           <Image Name="guanghuan1.png" />
           <Image Name="jinzhanxiaobing.png" />
           <Image Name="jinzhanxiaobing_yuan.png" />
+          <Image Name="liaoji.png" />
           <Image Name="liaoji0.png" />
           <Image Name="liaoji1.png" />
           <Image Name="liaoji2.png" />
@@ -84,6 +85,7 @@
         <Image Name="0.02.png" />
         <Image Name="0.03.png" />
         <Image Name="1.png" />
+        <Image Name="11.png" />
         <Image Name="1-1.png" />
         <Image Name="1-2.png" />
         <Image Name="1-3.png" />
@@ -147,6 +149,9 @@
         <Project Name="Map03.csd" Type="Scene" />
         <Project Name="Map04.csd" Type="Scene" />
         <Project Name="Map05.csd" Type="Scene" />
+        <Project Name="Map06.csd" Type="Scene" />
+        <Project Name="Map07.csd" Type="Scene" />
+        <Project Name="Map08.csd" Type="Scene" />
         <Project Name="mapScence.csd" Type="Scene" />
         <Project Name="MapTest.csd" Type="Scene" />
         <Project Name="MapTest2.csd" Type="Layer" />
@@ -229,9 +234,6 @@
         <TmxFile Name="zhangaiwu02-5.tmx" />
         <TmxFile Name="zhangaiwu02-6.tmx" />
         <Image Name="zhongzhi.png" />
-        <Project Name="Map06.csd" Type="Scene" />
-        <Project Name="Map07.csd" Type="Scene" />
-        <Project Name="Map08.csd" Type="Scene" />
       </RootFolder>
     </Group>
   </SolutionFolder>
