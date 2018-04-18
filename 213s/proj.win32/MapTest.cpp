@@ -12,6 +12,10 @@
 #include <time.h>
 #include <fstream>
 #include <stdio.h>
+#include "json/document.h"
+#include "json/prettywriter.h"
+#include "json/filereadstream.h"
+#include "json/stringbuffer.h"
 
 #define READY 0
 #define RUN 1
@@ -354,6 +358,84 @@ void MapTest::setMap()
 	Node *nod;
 	Player test;
 	if (gameTime == 0){
+		/**
+		*	json
+		*/
+
+		//string filename = "../setting.json";
+
+		//rapidjson::Document doc;
+
+		////判断文件是否存在  
+
+		//if (!FileUtils::getInstance()->isFileExist(filename))
+
+		//{
+		//	log("json file is not find [%s]", filename);
+
+		//}
+		////读取文件数据，初始化doc  
+		//std::string data = FileUtils::getInstance()->getStringFromFile(filename);
+
+		//doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
+
+		//for (unsigned int i = 0; i<doc.Size(); i++)
+
+		//{
+
+		//	//逐个提取数组元素（声明的变量必须为引用）  
+
+		//	rapidjson::Value &v = doc[i];
+
+
+
+		//	int id;//ID  
+
+		//	string name;//名称  
+
+		//	int hp;//血量  
+
+		//	int Defense;//防御力  
+
+		//	int attack;//攻击力  
+
+		//	int passable;//是否可穿透（通行）  
+
+
+		//	//判断各属性是否存在（可以支持中文（UTF8格式））  
+
+		//	if (v.HasMember("ID") && v.HasMember(A2U("名称")) && v.HasMember(A2U("血量"))
+
+		//		&& v.HasMember(A2U("防御力")) && v.HasMember(A2U("攻击力")) && v.HasMember(A2U("可穿透")))
+
+		//	{
+
+		//		//按属性提取数据  
+
+		//		id = v["ID"].GetInt();
+
+		//		name = v[A2U("名称")].GetString();
+
+		//		hp = v[A2U("血量")].GetInt();
+
+		//		Defense = v[A2U("防御力")].GetInt();
+
+		//		attack = v[A2U("攻击力")].GetInt();
+
+		//		passable = v[A2U("可穿透")].GetInt();
+
+
+
+		//		log(A2U("ID:%d,名称:%s,血量:%d,防御力:%d,攻击力:%d,可穿透性:%s"),
+
+		//			id, name.c_str(), hp, Defense, attack, (passable ? "true" : "false"));
+
+		//	}
+
+		//}
+
+
+
 		//diban = CSLoader::createNode("MapTest2.csb");
 		diban = CSLoader::createNode("Map02.csb");
 		this->addChild(diban, 0);
