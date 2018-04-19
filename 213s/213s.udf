@@ -37,8 +37,9 @@
           <FilePathData Path="Map05.csd" />
           <FilePathData Path="Map07.csd" />
           <FilePathData Path="Map08.csd" />
+          <FilePathData Path="player0.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Map04.csd" />
+        <ActiveDocument Path="player0.csd" />
       </Value>
     </Item>
   </Properties>
