@@ -2,44 +2,21 @@
   <Properties>
     <Item Key="CocosRecentOperation">
       <Value ctype="CocosRecentOperation">
-        <LastPublishType Value="VS" />
+        <LastPublishType Value="Resource" />
         <IsLastPublish Value="True" />
         <LastRunType Value="Windows" />
-      </Value>
-    </Item>
-    <Item Key="PackageParamsKey">
-      <Value ctype="PackageParams">
-        <LuaIsEncrypt Value="False" />
-        <LuaEncryptKey Value="" />
-        <LuaEncryptSign Value="" />
-        <Android_PackageName Value="org.cocos.ts" />
-        <AndroidkeyStore Value="" />
-        <AndroidVersion Value="" />
-        <iOS_Target Value="213s-mobile" />
-        <iOS_BundleID Value="" />
-        <Platform Value="Android" />
-        <RunPlatform Value="Windows" />
-        <FrameworkVersion Value="cocos2d-x-3.10" />
-        <IsDebugKeystore Value="True" />
-        <KeystorePassword Value="" />
-        <KeystoreAliasName Value="" />
-        <KeystoreAliasPassword Value="" />
-        <EnableSourceMap Value="False" />
-        <EnableHTML5Advanced Value="False" />
       </Value>
     </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="Map03.csd" />
-          <FilePathData Path="Map04.csd" />
-          <FilePathData Path="Map06.csd" />
-          <FilePathData Path="Map05.csd" />
-          <FilePathData Path="Map07.csd" />
           <FilePathData Path="Map08.csd" />
-          <FilePathData Path="player0.csd" />
+          <FilePathData Path="Map09.csd" />
+          <FilePathData Path="Map10.csd" />
+          <FilePathData Path="Map11.csd" />
+          <FilePathData Path="Map12.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="player0.csd" />
+        <ActiveDocument Path="Map12.csd" />
       </Value>
     </Item>
   </Properties>

@@ -358,92 +358,58 @@ void MapTest::setMap()
 	Node *nod;
 	Player test;
 	if (gameTime == 0){
+		
+		gameLoad();
+
+
 		/**
-		*	json
+		*	设置坐标
 		*/
 
-		//string filename = "../setting.json";
+		string filename = "config/setting.json";
 
-		//rapidjson::Document doc;
+		rapidjson::Document doc;
+		//读取文件数据，初始化doc  
+		std::string data = FileUtils::getInstance()->getStringFromFile(filename);
 
-		////判断文件是否存在  
+		doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
 
-		//if (!FileUtils::getInstance()->isFileExist(filename))
+		for (unsigned int i = 0; i < doc.Size(); i++)
 
-		//{
-		//	log("json file is not find [%s]", filename);
+		{
 
-		//}
-		////读取文件数据，初始化doc  
-		//std::string data = FileUtils::getInstance()->getStringFromFile(filename);
+			//逐个提取数组元素（声明的变量必须为引用）  
 
-		//doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
+			rapidjson::Value &v = doc[i];
+			allPlayer[v["tag"].GetInt()].p.setPos(v["x"].GetInt(), v["y"].GetInt());
 
-		//for (unsigned int i = 0; i<doc.Size(); i++)
+		}
+		data.clear();
+		/*设置地图*/
+		rapidjson::Document doc1;
+		std::string data1 = FileUtils::getInstance()->getStringFromFile("config/setting_map.json");
 
-		//{
+		doc1.Parse<rapidjson::kParseDefaultFlags>(data1.c_str());
 
-		//	//逐个提取数组元素（声明的变量必须为引用）  
+		for (unsigned int i = 0; i < doc1.Size(); i++)
 
-		//	rapidjson::Value &v = doc[i];
+		{
 
+			//逐个提取数组元素（声明的变量必须为引用）  
 
-
-		//	int id;//ID  
-
-		//	string name;//名称  
-
-		//	int hp;//血量  
-
-		//	int Defense;//防御力  
-
-		//	int attack;//攻击力  
-
-		//	int passable;//是否可穿透（通行）  
-
-
-		//	//判断各属性是否存在（可以支持中文（UTF8格式））  
-
-		//	if (v.HasMember("ID") && v.HasMember(A2U("名称")) && v.HasMember(A2U("血量"))
-
-		//		&& v.HasMember(A2U("防御力")) && v.HasMember(A2U("攻击力")) && v.HasMember(A2U("可穿透")))
-
-		//	{
-
-		//		//按属性提取数据  
-
-		//		id = v["ID"].GetInt();
-
-		//		name = v[A2U("名称")].GetString();
-
-		//		hp = v[A2U("血量")].GetInt();
-
-		//		Defense = v[A2U("防御力")].GetInt();
-
-		//		attack = v[A2U("攻击力")].GetInt();
-
-		//		passable = v[A2U("可穿透")].GetInt();
-
-
-
-		//		log(A2U("ID:%d,名称:%s,血量:%d,防御力:%d,攻击力:%d,可穿透性:%s"),
-
-		//			id, name.c_str(), hp, Defense, attack, (passable ? "true" : "false"));
-
-		//	}
-
-		//}
-
-
+			rapidjson::Value &v = doc1[i];
+			diban = CSLoader::createNode(v["mapFile"].GetString());
+			this->addChild(diban, 0);
+		}
+		data1.clear();
 
 		//diban = CSLoader::createNode("MapTest2.csb");
-		diban = CSLoader::createNode("Map02.csb");
-		this->addChild(diban, 0);
-		gameLoad();
-		allPlayer[0].p.setPos(2, 2);
+		//diban = CSLoader::createNode("Map02.csb");
+		//this->addChild(diban, 0);
+		/*allPlayer[0].p.setPos(2, 2);
 		allPlayer[1].p.setPos(2, 3);
 		allPlayer[2].p.setPos(4, 2);
-		allPlayer[3].p.setPos(3, 2);
+		allPlayer[3].p.setPos(3, 2);*/
 		allPlayer[4].a = 1;
 		allPlayer[4].p = liaoji0(20, 15, 5, 120001);
 		allPlayer[5].a = 1;
