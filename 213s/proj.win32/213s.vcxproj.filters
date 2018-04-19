@@ -36,18 +36,6 @@
     <ClCompile Include="Skill.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\gyy\AppData\Local\Temp\Rar$DRa5604.920\tinyxml\tinystr.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\gyy\AppData\Local\Temp\Rar$DRa5604.920\tinyxml\tinyxml.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\gyy\AppData\Local\Temp\Rar$DRa5604.920\tinyxml\tinyxmlerror.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="C:\Users\gyy\AppData\Local\Temp\Rar$DRa5604.920\tinyxml\tinyxmlparser.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -72,12 +60,6 @@
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="Skill.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\gyy\AppData\Local\Temp\Rar$DRa5604.920\tinyxml\tinystr.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="C:\Users\gyy\AppData\Local\Temp\Rar$DRa5604.920\tinyxml\tinyxml.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>

@@ -37,8 +37,18 @@
           <FilePathData Path="Map05.csd" />
           <FilePathData Path="Map07.csd" />
           <FilePathData Path="Map08.csd" />
+          <FilePathData Path="player1.csd" />
+          <FilePathData Path="player1_sx.csd" />
+          <FilePathData Path="player2.csd" />
+          <FilePathData Path="boss2.csd" />
+          <FilePathData Path="boss2_gjtexiao.csd" />
+          <FilePathData Path="d1.csd" />
+          <FilePathData Path="d2.csd" />
+          <FilePathData Path="m_gongji.csd" />
+          <FilePathData Path="m_loading.csd" />
+          <FilePathData Path="powerNode.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Map04.csd" />
+        <ActiveDocument Path="powerNode.csd" />
       </Value>
     </Item>
   </Properties>
