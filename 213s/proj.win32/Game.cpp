@@ -15,7 +15,7 @@ Scene* StartGame::createScene()
 	auto layer = StartGame::create();
 
 	scene->addChild(layer);
-
+	
 	return scene;
 }
 
