@@ -31,6 +31,132 @@
           <Image Name="za.png" />
         </Folder>
         <Folder Name="player">
+          <Folder Name="12bei">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="3dong">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="6nan">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="9xi">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="BOSS1">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="BOSS2">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="BOSS3">
+            <Image Name="1.png" />
+            <Image Name="10.png" />
+            <Image Name="11.png" />
+            <Image Name="12.png" />
+            <Image Name="13.png" />
+            <Image Name="14.png" />
+            <Image Name="15.png" />
+            <Image Name="16.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
           <TTF Name="abc.ttf" />
         </Folder>
         <Folder Name="zt">
@@ -156,6 +282,10 @@
         <Project Name="Map06.csd" Type="Scene" />
         <Project Name="Map07.csd" Type="Scene" />
         <Project Name="Map08.csd" Type="Scene" />
+        <Project Name="Map09.csd" Type="Scene" />
+        <Project Name="Map10.csd" Type="Scene" />
+        <Project Name="Map11.csd" Type="Scene" />
+        <Project Name="Map12.csd" Type="Scene" />
         <Project Name="mapScence.csd" Type="Scene" />
         <Project Name="MapTest.csd" Type="Scene" />
         <Project Name="MapTest2.csd" Type="Layer" />
@@ -238,10 +368,13 @@
         <TmxFile Name="zhangaiwu02-5.tmx" />
         <TmxFile Name="zhangaiwu02-6.tmx" />
         <Image Name="zhongzhi.png" />
-        <Project Name="Map09.csd" Type="Scene" />
-        <Project Name="Map10.csd" Type="Scene" />
-        <Project Name="Map11.csd" Type="Scene" />
-        <Project Name="Map12.csd" Type="Scene" />
+        <Project Name="rw00.csd" Type="Node" />
+        <Project Name="rw01.csd" Type="Node" />
+        <Project Name="rw02.csd" Type="Node" />
+        <Project Name="rw03.csd" Type="Node" />
+        <Project Name="rw04.csd" Type="Node" />
+        <Project Name="rw05.csd" Type="Node" />
+        <Project Name="rw06.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>

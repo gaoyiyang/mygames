@@ -15,8 +15,17 @@
           <FilePathData Path="Map10.csd" />
           <FilePathData Path="Map11.csd" />
           <FilePathData Path="Map12.csd" />
+          <FilePathData Path="player0_sx.csd" />
+          <FilePathData Path="player1.csd" />
+          <FilePathData Path="rw00.csd" />
+          <FilePathData Path="rw01.csd" />
+          <FilePathData Path="rw02.csd" />
+          <FilePathData Path="rw03.csd" />
+          <FilePathData Path="rw04.csd" />
+          <FilePathData Path="rw05.csd" />
+          <FilePathData Path="rw06.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="Map12.csd" />
+        <ActiveDocument Path="rw06.csd" />
       </Value>
     </Item>
   </Properties>
