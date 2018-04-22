@@ -173,13 +173,13 @@ void newGame()
 	if (!iFin.is_open()){
 		iFin.close();
 		oFin.open("..\\sav.txt");
-		str = "player0 player0.csb 100001 1000 240 8 20 3 2 101 102 103 104 105 106 107 108 109 110 111 112 0 0 0 0 0";
+		str = "player0 rw00.csb 100001 1000 240 8 20 3 2 101 102 103 104 105 106 107 108 109 110 111 112 0 0 0 0 0";
 		oFin << str << "\n";
-		str = "player1 player1.csb 100002 1200 200 10 18 4 1 205 207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
+		str = "player1 rw01.csb 100002 1200 200 10 18 4 1 205 207 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
 		oFin << str << "\n";
-		str = "player2 player2.csb 100003 950 250 6 19 2 3 309 312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
+		str = "player2 rw02.csb 100003 950 250 6 19 2 3 309 312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
 		oFin << str << "\n";
-		str = "player3 player3.csb 100004 1000 230 10 18 4 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
+		str = "player3 rw03.csb 100004 1000 230 10 18 4 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0";
 		oFin << str << "\n";
 		oFin.close();
 	}
@@ -296,7 +296,7 @@ Player d1(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("xiaobing1");
-	p.setPictureName("d1.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(50 + Lv * 30);
 	p.setAtt(5 + Lv * 5);
 	p.setAtMov(2);
@@ -312,7 +312,7 @@ Player d2(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("xiaobing2");
-	p.setPictureName("d2.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(50 + Lv * 30);
 	p.setAtt(5 + Lv * 5);
 	p.setAtMov(1);
@@ -328,7 +328,7 @@ Player boss2(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("boss2");
-	p.setPictureName("boss2.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(100 + Lv * 100);
 	p.setAtt(25 + Lv * 5);
 	p.setAtMov(200);
@@ -344,7 +344,7 @@ Player liaoji0(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("liaoji0");
-	p.setPictureName("liaoji0.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(200 + Lv * 50);
 	p.setAtt(0);
 	p.setAtMov(0);
@@ -361,7 +361,7 @@ Player liaoji1(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("liaoji1");
-	p.setPictureName("liaoji1.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(200 + Lv * 50);
 	p.setAtt(0);
 	p.setAtMov(0);
@@ -377,7 +377,7 @@ Player liaoji2(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("liaoji2");
-	p.setPictureName("liaoji2.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(200 + Lv * 50);
 	p.setAtt(0);
 	p.setAtMov(0);
@@ -393,7 +393,7 @@ Player liaoji3(int Lv, int x, int y, int tag)
 {
 	Player p;
 	p.setName("liaoji3");
-	p.setPictureName("liaoji.csb");
+	p.setPictureName("rw04.csb");
 	p.setHp(200 + Lv * 50);
 	p.setAtt(0);
 	p.setAtMov(0);

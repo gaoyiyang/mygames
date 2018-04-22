@@ -323,6 +323,13 @@
         <Project Name="player3_sx.csd" Type="Scene" />
         <PlistInfo Name="Plist.csi" Type="Plist" />
         <Project Name="powerNode.csd" Type="Node" />
+        <Project Name="rw00.csd" Type="Node" />
+        <Project Name="rw01.csd" Type="Node" />
+        <Project Name="rw02.csd" Type="Node" />
+        <Project Name="rw03.csd" Type="Node" />
+        <Project Name="rw04.csd" Type="Node" />
+        <Project Name="rw05.csd" Type="Node" />
+        <Project Name="rw06.csd" Type="Node" />
         <Project Name="Scene.csd" Type="Scene" />
         <Project Name="Scene_name.csd" Type="Scene" />
         <Project Name="Scene_set.csd" Type="Scene" />
@@ -368,13 +375,6 @@
         <TmxFile Name="zhangaiwu02-5.tmx" />
         <TmxFile Name="zhangaiwu02-6.tmx" />
         <Image Name="zhongzhi.png" />
-        <Project Name="rw00.csd" Type="Node" />
-        <Project Name="rw01.csd" Type="Node" />
-        <Project Name="rw02.csd" Type="Node" />
-        <Project Name="rw03.csd" Type="Node" />
-        <Project Name="rw04.csd" Type="Node" />
-        <Project Name="rw05.csd" Type="Node" />
-        <Project Name="rw06.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
