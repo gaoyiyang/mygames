@@ -57,15 +57,15 @@
       <ObjectData Name="Node" Tag="209" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="Sprite_1" ActionTag="253934254" Tag="210" IconVisible="False" RightMargin="-46.0000" TopMargin="-46.0000" ctype="SpriteObjectData">
-            <Size X="33.0000" Y="45.0000" />
+          <AbstractNodeData Name="Sprite_1" ActionTag="253934254" Tag="210" IconVisible="False" RightMargin="-33.0000" TopMargin="-45.0000" ctype="SpriteObjectData">
+            <Size X="32.0000" Y="48.0000" />
             <AnchorPoint />
             <Position />
-            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <Scale ScaleX="0.6250" ScaleY="0.6250" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-            <FileData Type="Normal" Path="player/9xi/16.png" Plist="" />
+            <FileData Type="Normal" Path="player/9xi/1.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>

@@ -103,6 +103,94 @@
             <Image Name="8.png" />
             <Image Name="9.png" />
           </Folder>
+          <Folder Name="bing1">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing2">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing3">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing4">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing5">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing6">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing7">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
+          <Folder Name="bing8">
+            <Image Name="1.png" />
+            <Image Name="2.png" />
+            <Image Name="3.png" />
+            <Image Name="4.png" />
+            <Image Name="5.png" />
+            <Image Name="6.png" />
+            <Image Name="7.png" />
+            <Image Name="8.png" />
+            <Image Name="9.png" />
+          </Folder>
           <Folder Name="BOSS1">
             <Image Name="1.png" />
             <Image Name="10.png" />
@@ -323,6 +411,21 @@
         <Project Name="player3_sx.csd" Type="Scene" />
         <PlistInfo Name="Plist.csi" Type="Plist" />
         <Project Name="powerNode.csd" Type="Node" />
+        <Project Name="rw00.csd" Type="Node" />
+        <Project Name="rw01.csd" Type="Node" />
+        <Project Name="rw02.csd" Type="Node" />
+        <Project Name="rw03.csd" Type="Node" />
+        <Project Name="rw04.csd" Type="Node" />
+        <Project Name="rw05.csd" Type="Node" />
+        <Project Name="rw06.csd" Type="Node" />
+        <Project Name="rw07.csd" Type="Node" />
+        <Project Name="rw08.csd" Type="Node" />
+        <Project Name="rw09.csd" Type="Node" />
+        <Project Name="rw10.csd" Type="Node" />
+        <Project Name="rw11.csd" Type="Node" />
+        <Project Name="rw12.csd" Type="Node" />
+        <Project Name="rw13.csd" Type="Node" />
+        <Project Name="rw14.csd" Type="Node" />
         <Project Name="Scene.csd" Type="Scene" />
         <Project Name="Scene_name.csd" Type="Scene" />
         <Project Name="Scene_set.csd" Type="Scene" />
@@ -368,13 +471,6 @@
         <TmxFile Name="zhangaiwu02-5.tmx" />
         <TmxFile Name="zhangaiwu02-6.tmx" />
         <Image Name="zhongzhi.png" />
-        <Project Name="rw00.csd" Type="Node" />
-        <Project Name="rw01.csd" Type="Node" />
-        <Project Name="rw02.csd" Type="Node" />
-        <Project Name="rw03.csd" Type="Node" />
-        <Project Name="rw04.csd" Type="Node" />
-        <Project Name="rw05.csd" Type="Node" />
-        <Project Name="rw06.csd" Type="Node" />
       </RootFolder>
     </Group>
   </SolutionFolder>
