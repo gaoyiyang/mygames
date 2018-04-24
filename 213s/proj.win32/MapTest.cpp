@@ -137,7 +137,7 @@ bool MapTest::init()
 	this->addChild(back);
 	Button* backButton = dynamic_cast<Button*>(back->getChildByName("Button_Back"));
 	backButton->addTouchEventListener(CC_CALLBACK_2(MapTest::backMenu, this));//为Back按钮添加功能
-	this->schedule(schedule_selector(MapTest::start), 0.5f);//schedule()函数，实现计时器，每0.5f秒执行一次MapTest::start()
+	this->schedule(schedule_selector(MapTest::start), 0.2f);//schedule()函数，实现计时器，每0.2f秒执行一次MapTest::start()
 	return true;
 }
 
@@ -161,7 +161,7 @@ void MapTest::startTime(cocos2d::Layer* layer, ssp* sPlayer){
 void MapTest::start(float f)
 {
 	winL();
-	
+
 	this->removeChildByName("change");
 
 	//获取当前能量值，如果与实际不同则修改为实际值
@@ -204,6 +204,28 @@ void MapTest::start(float f)
 	for (int i = 0; i < 20; i++){
 		if (allPlayer[i].p.hp != oldPlayer[i].p.hp){
 			changeHp(allPlayer[i].p.hp - oldPlayer[i].p.hp, allPlayer[i].p.x, allPlayer[i].p.y);
+		}
+
+		//添加人物移动动画
+		if (allPlayer[i].p.x - oldPlayer[i].p.x < 0){
+			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
+			action->gotoFrameAndPlay(40, 70, false);
+			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
+		}
+		if (allPlayer[i].p.x - oldPlayer[i].p.x > 0){
+			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
+			action->gotoFrameAndPlay(80, 110, false);
+			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
+		}
+		if (allPlayer[i].p.y - oldPlayer[i].p.y < 0){
+			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
+			action->gotoFrameAndPlay(0, 30, false);
+			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
+		}
+		if (allPlayer[i].p.y - oldPlayer[i].p.y < 0){
+			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
+			action->gotoFrameAndPlay(120, 150, false);
+			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
 		}
 	}
 	//保存当前状态
@@ -472,6 +494,8 @@ void MapTest::backMenu(Ref* pSender, Widget::TouchEventType type)
 	}
 }
 
+int nowMoveTag = 0;
+
 void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 {
 	CCNode* node = dynamic_cast<CCNode*>(pSender);
@@ -490,21 +514,17 @@ void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 										  DFS();
 										  CCSequence* mov = CCSequence::create(CCMoveTo::create(0.0, t->getPosition()), NULL, NULL, NULL);
 										  CCSequence* anm = NULL;
-										  for (int i = 0; i < 10; i++){
+										  for (int i = 0; i < 10; i++)
 											  if (pxy[i].num == 1){
-												  ActionTimeline *action = NULL;
-												  action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
-												  action->gotoFrameAndPlay(0, 30, false);
-												  t->runAction(action);
-												  mov = CCSequence::create(mov, CCMoveTo::create(0.5f, ccp(pxy[i].x, pxy[i].y)), NULL, NULL);
+												  mov = CCSequence::create(mov, CCMoveTo::create(0.5f, ccp(pxy[i].x, pxy[i].y)), NULL , NULL);
 											  }
-
+											 
 										  }
 										  
 										  t->runAction(mov);
 										  
 										  this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(node->getPosition());
-										  allPlayer[nowNum].p.setPos(int(node->getPositionX() / 30),
+										 allPlayer[nowNum].p.setPos(int(node->getPositionX() / 30),
 											  int(node->getPositionY() / 30));
 										  MapTest::deMove();
 										  gameFlag = RUN;
@@ -515,6 +535,14 @@ void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 	default:break;
 	}
 }
+
+void MapTest::movAction(int b)
+{
+	allPlayer[nowNum].p.setPos(pxy[b].x / 30,
+		pxy[b].y / 30);
+}
+
+
 void MapTest::deMove()
 {
 	for (int i = 102; i < 10000; i++)

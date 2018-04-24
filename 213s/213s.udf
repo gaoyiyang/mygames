@@ -28,52 +28,10 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
-          <FilePathData Path="Map08.csd" />
-          <FilePathData Path="Map09.csd" />
-          <FilePathData Path="Map10.csd" />
-          <FilePathData Path="Map11.csd" />
-          <FilePathData Path="Map12.csd" />
-          <FilePathData Path="player0_sx.csd" />
-          <FilePathData Path="player1.csd" />
           <FilePathData Path="rw00.csd" />
-          <FilePathData Path="rw01.csd" />
           <FilePathData Path="rw02.csd" />
-          <FilePathData Path="rw03.csd" />
-          <FilePathData Path="rw04.csd" />
-          <FilePathData Path="rw05.csd" />
-          <FilePathData Path="rw06.csd" />
-          <FilePathData Path="p1shezhi.csd" />
-          <FilePathData Path="player2_sx.csd" />
-          <FilePathData Path="powerNode.csd" />
-          <FilePathData Path="all_jineng.csd" />
-          <FilePathData Path="all_buff.csd" />
-          <FilePathData Path="gameLose.csd" />
-          <FilePathData Path="gameWin.csd" />
-          <FilePathData Path="guanghuan1.csd" />
-          <FilePathData Path="guanghuan0.csd" />
-          <FilePathData Path="Layer1.csd" />
-          <FilePathData Path="liaoji0.csd" />
-          <FilePathData Path="liaoji2.csd" />
-          <FilePathData Path="loadingBarNode.csd" />
-          <FilePathData Path="loadingBarLayer.csd" />
-          <FilePathData Path="m_cghp2.csd" />
-          <FilePathData Path="m_zhongzhi.csd" />
-          <FilePathData Path="m_shezhi.csd" />
-          <FilePathData Path="m_yidong.csd" />
-          <FilePathData Path="Map02.csd" />
-          <FilePathData Path="Map07.csd" />
-          <FilePathData Path="MapTest2.csd" />
-          <FilePathData Path="menu.csd" />
-          <FilePathData Path="MoveButton_ai.csd" />
-          <FilePathData Path="MoveButton_test1.csd" />
-          <FilePathData Path="Node1.csd" />
-          <FilePathData Path="Node.csd" />
-          <FilePathData Path="Node2_0.csd" />
-          <FilePathData Path="Node3.csd" />
-          <FilePathData Path="player0.csd" />
-          <FilePathData Path="test1.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="rw00.csd" />
+        <ActiveDocument Path="rw02.csd" />
       </Value>
     </Item>
   </Properties>

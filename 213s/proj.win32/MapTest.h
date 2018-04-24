@@ -105,6 +105,9 @@ public:
 
 	void winL();//战斗结算
 	void moveI();
+
+	void movAction(int b);
+
 };
 
 //迷宫寻路函数
