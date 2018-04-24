@@ -489,19 +489,20 @@ void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 
 										  DFS();
 										  CCSequence* mov = CCSequence::create(CCMoveTo::create(0.0, t->getPosition()), NULL, NULL, NULL);
+										  CCSequence* anm = NULL;
 										  for (int i = 0; i < 10; i++){
 											  if (pxy[i].num == 1){
-												  mov = CCSequence::create(mov, CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL, NULL);
+												  ActionTimeline *action = NULL;
+												  action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+												  action->gotoFrameAndPlay(0, 30, false);
+												  t->runAction(action);
+												  mov = CCSequence::create(mov, CCMoveTo::create(0.5f, ccp(pxy[i].x, pxy[i].y)), NULL, NULL);
 											  }
 
 										  }
+										  
 										  t->runAction(mov);
-										  /*播放人物连帧动画
-										  if (nowNum == 0){
-										  ActionTimeline *action = CSLoader::createTimeline("test1.csb");
-										  t->runAction(action);
-										  action->gotoFrameAndPlay(0, 15, true);
-										  }*/
+										  
 										  this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(node->getPosition());
 										  allPlayer[nowNum].p.setPos(int(node->getPositionX() / 30),
 											  int(node->getPositionY() / 30));

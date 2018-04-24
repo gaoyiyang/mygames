@@ -7,6 +7,24 @@
         <LastRunType Value="Windows" />
       </Value>
     </Item>
+    <Item Key="PackageParamsKey">
+      <Value ctype="PackageParams">
+        <LuaIsEncrypt Value="False" />
+        <LuaEncryptKey Value="" />
+        <LuaEncryptSign Value="" />
+        <Android_PackageName Value="org.cocos.213s" />
+        <AndroidkeyStore Value="" />
+        <AndroidVersion Value="" />
+        <iOS_Target Value="213s-mobile" />
+        <iOS_BundleID Value="" />
+        <Platform Value="None" />
+        <RunPlatform Value="None" />
+        <FrameworkVersion Value="cocos2d-x-3.10" />
+        <IsDebugKeystore Value="True" />
+        <EnableSourceMap Value="False" />
+        <EnableHTML5Advanced Value="False" />
+      </Value>
+    </Item>
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
@@ -15,6 +33,7 @@
           <FilePathData Path="rw09.csd" />
           <FilePathData Path="rw10.csd" />
           <FilePathData Path="rw06.csd" />
+<<<<<<< HEAD
           <FilePathData Path="rw11.csd" />
           <FilePathData Path="rw12.csd" />
           <FilePathData Path="rw13.csd" />
@@ -26,6 +45,40 @@
           <FilePathData Path="Map08.csd" />
         </OpenedDocuments>
         <ActiveDocument Path="Map08.csd" />
+=======
+          <FilePathData Path="p1shezhi.csd" />
+          <FilePathData Path="player2_sx.csd" />
+          <FilePathData Path="powerNode.csd" />
+          <FilePathData Path="all_jineng.csd" />
+          <FilePathData Path="all_buff.csd" />
+          <FilePathData Path="gameLose.csd" />
+          <FilePathData Path="gameWin.csd" />
+          <FilePathData Path="guanghuan1.csd" />
+          <FilePathData Path="guanghuan0.csd" />
+          <FilePathData Path="Layer1.csd" />
+          <FilePathData Path="liaoji0.csd" />
+          <FilePathData Path="liaoji2.csd" />
+          <FilePathData Path="loadingBarNode.csd" />
+          <FilePathData Path="loadingBarLayer.csd" />
+          <FilePathData Path="m_cghp2.csd" />
+          <FilePathData Path="m_zhongzhi.csd" />
+          <FilePathData Path="m_shezhi.csd" />
+          <FilePathData Path="m_yidong.csd" />
+          <FilePathData Path="Map02.csd" />
+          <FilePathData Path="Map07.csd" />
+          <FilePathData Path="MapTest2.csd" />
+          <FilePathData Path="menu.csd" />
+          <FilePathData Path="MoveButton_ai.csd" />
+          <FilePathData Path="MoveButton_test1.csd" />
+          <FilePathData Path="Node1.csd" />
+          <FilePathData Path="Node.csd" />
+          <FilePathData Path="Node2_0.csd" />
+          <FilePathData Path="Node3.csd" />
+          <FilePathData Path="player0.csd" />
+          <FilePathData Path="test1.csd" />
+        </OpenedDocuments>
+        <ActiveDocument Path="rw00.csd" />
+>>>>>>> a7d05040ca0378caaf883a384d63b0fe1d4740bc
       </Value>
     </Item>
   </Properties>

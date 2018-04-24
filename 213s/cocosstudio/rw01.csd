@@ -58,14 +58,22 @@
         <Size X="0.0000" Y="0.0000" />
         <Children>
           <AbstractNodeData Name="Sprite_1" ActionTag="-258249592" Tag="206" IconVisible="False" RightMargin="-32.0000" TopMargin="-48.0000" ctype="SpriteObjectData">
+<<<<<<< HEAD
             <Size X="31.0000" Y="51.0000" />
+=======
+            <Size X="30.0000" Y="50.0000" />
+>>>>>>> a7d05040ca0378caaf883a384d63b0fe1d4740bc
             <AnchorPoint />
             <Position />
             <Scale ScaleX="0.5880" ScaleY="0.5880" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
+<<<<<<< HEAD
             <FileData Type="Normal" Path="player/6nan/1.png" Plist="" />
+=======
+            <FileData Type="Normal" Path="player/6nan/5.png" Plist="" />
+>>>>>>> a7d05040ca0378caaf883a384d63b0fe1d4740bc
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>

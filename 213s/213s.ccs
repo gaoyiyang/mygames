@@ -418,6 +418,7 @@
         <Project Name="rw04.csd" Type="Node" />
         <Project Name="rw05.csd" Type="Node" />
         <Project Name="rw06.csd" Type="Node" />
+<<<<<<< HEAD
         <Project Name="rw07.csd" Type="Node" />
         <Project Name="rw08.csd" Type="Node" />
         <Project Name="rw09.csd" Type="Node" />
@@ -426,6 +427,8 @@
         <Project Name="rw12.csd" Type="Node" />
         <Project Name="rw13.csd" Type="Node" />
         <Project Name="rw14.csd" Type="Node" />
+=======
+>>>>>>> a7d05040ca0378caaf883a384d63b0fe1d4740bc
         <Project Name="Scene.csd" Type="Scene" />
         <Project Name="Scene_name.csd" Type="Scene" />
         <Project Name="Scene_set.csd" Type="Scene" />
