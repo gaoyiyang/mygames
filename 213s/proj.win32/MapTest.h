@@ -108,6 +108,12 @@ public:
 
 	void movAction(int b);
 
+	void movUp();
+	void movDown();
+	void movRight();
+	void movLeft();
+	void movOver();
+
 };
 
 //ÃÔ¹¬Ñ°Â·º¯Êý

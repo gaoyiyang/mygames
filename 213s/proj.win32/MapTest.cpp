@@ -31,6 +31,9 @@ using namespace std;
 
 int fff = 0;
 
+//移动方向
+int nowMoveTag = 0;
+
 int guanghuan = -1;
 int skillOver;
 int iMove[3];//前面为移动人的编号，后面为移动的方位
@@ -137,7 +140,7 @@ bool MapTest::init()
 	this->addChild(back);
 	Button* backButton = dynamic_cast<Button*>(back->getChildByName("Button_Back"));
 	backButton->addTouchEventListener(CC_CALLBACK_2(MapTest::backMenu, this));//为Back按钮添加功能
-	this->schedule(schedule_selector(MapTest::start), 0.2f);//schedule()函数，实现计时器，每0.2f秒执行一次MapTest::start()
+	this->schedule(schedule_selector(MapTest::start), 0.5f);//schedule()函数，实现计时器，每0.2f秒执行一次MapTest::start()
 	return true;
 }
 
@@ -206,28 +209,9 @@ void MapTest::start(float f)
 			changeHp(allPlayer[i].p.hp - oldPlayer[i].p.hp, allPlayer[i].p.x, allPlayer[i].p.y);
 		}
 
-		//添加人物移动动画
-		if (allPlayer[i].p.x - oldPlayer[i].p.x < 0){
-			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
-			action->gotoFrameAndPlay(40, 70, false);
-			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
-		}
-		if (allPlayer[i].p.x - oldPlayer[i].p.x > 0){
-			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
-			action->gotoFrameAndPlay(80, 110, false);
-			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
-		}
-		if (allPlayer[i].p.y - oldPlayer[i].p.y < 0){
-			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
-			action->gotoFrameAndPlay(0, 30, false);
-			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
-		}
-		if (allPlayer[i].p.y - oldPlayer[i].p.y < 0){
-			auto action = CSLoader::createTimeline(allPlayer[i].p.pictureName);
-			action->gotoFrameAndPlay(120, 150, false);
-			this->getChildByTag(allPlayer[i].p.tag)->runAction(action);
-		}
+		
 	}
+
 	//保存当前状态
 	for (int i = 0; i < 20; i++){
 		oldPlayer[i] = allPlayer[i];
@@ -494,7 +478,6 @@ void MapTest::backMenu(Ref* pSender, Widget::TouchEventType type)
 	}
 }
 
-int nowMoveTag = 0;
 
 void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 {
@@ -513,15 +496,28 @@ void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 
 										  DFS();
 										  CCSequence* mov = CCSequence::create(CCMoveTo::create(0.0, t->getPosition()), NULL, NULL, NULL);
-										  CCSequence* anm = NULL;
-										  for (int i = 0; i < 10; i++)
+										  int ox = t->getPositionX() / 30;
+										  int oy = t->getPositionY() / 30;
+										  for (int i = 0; i < 10; i++){
 											  if (pxy[i].num == 1){
-												  mov = CCSequence::create(mov, CCMoveTo::create(0.5f, ccp(pxy[i].x, pxy[i].y)), NULL , NULL);
+												  if ((int)(pxy[i].x / 30) - ox > 0){
+													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movRight,this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+												  }
+												  if ((int)(pxy[i].x / 30) - ox < 0){
+													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movLeft, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+												  }
+												  if ((int)(pxy[i].y / 30) - oy > 0){
+													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movUp, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+												  }
+												  if ((int)(pxy[i].y / 30) - oy < 0){
+													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movDown, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+												  }
+												  
 											  }
 											 
 										  }
 										  
-										  t->runAction(mov);
+										  t->runAction(CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movOver, this)), NULL, NULL));
 										  
 										  this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(node->getPosition());
 										 allPlayer[nowNum].p.setPos(int(node->getPositionX() / 30),
@@ -536,10 +532,54 @@ void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 	}
 }
 
-void MapTest::movAction(int b)
+CCAction *cca = NULL;
+
+void MapTest::movUp()
 {
-	allPlayer[nowNum].p.setPos(pxy[b].x / 30,
-		pxy[b].y / 30);
+	if (nowMoveTag != 1){
+		nowMoveTag = 1;
+		auto action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+		action->gotoFrameAndPlay(120, 150, false);
+		action->setTimeSpeed(0.2f);
+		this->getChildByTag(allPlayer[nowNum].p.tag)->runAction(action);
+	}
+}
+void MapTest::movDown()
+{
+	if (nowMoveTag != 2){
+		nowMoveTag = 2;
+		auto action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+		action->gotoFrameAndPlay(0, 30,false);
+
+		action->setTimeSpeed(0.2f);
+		this->getChildByTag(allPlayer[nowNum].p.tag)->runAction(action);
+	}
+}
+void MapTest::movRight()
+{
+	if (nowMoveTag != 3){
+		nowMoveTag = 3;
+	auto action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+	action->gotoFrameAndPlay(80, 110,false);
+
+	action->setTimeSpeed(0.2f);
+	this->getChildByTag(allPlayer[nowNum].p.tag)->runAction(action);
+	}
+}
+void MapTest::movLeft()
+{
+	if (nowMoveTag != 4){
+		nowMoveTag = 4;
+		auto action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+		action->gotoFrameAndPlay(40, 70,false);
+
+		action->setTimeSpeed(0.2f);
+		this->getChildByTag(allPlayer[nowNum].p.tag)->runAction(action);
+	}
+}
+void MapTest::movOver()
+{
+	nowMoveTag = 0;
 }
 
 
@@ -985,14 +1025,29 @@ void MapTest::AImove()
 		auto t = this->getChildByTag(allPlayer[nowNum].p.tag);
 		DFS();
 		CCSequence* mov = CCSequence::create(CCMoveTo::create(0.0, t->getPosition()), NULL, NULL, NULL);
+		int ox = t->getPositionX() / 30;
+		int oy = t->getPositionY() / 30;
 		for (int i = 0; i < 10; i++){
 			if (pxy[i].num == 1){
-				mov = CCSequence::create(mov, CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL, NULL);
+				if ((int)(pxy[i].x / 30) - ox > 0){
+					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movRight, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+				}
+				if ((int)(pxy[i].x / 30) - ox < 0){
+					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movLeft, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+				}
+				if ((int)(pxy[i].y / 30) - oy > 0){
+					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movUp, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+				}
+				if ((int)(pxy[i].y / 30) - oy < 0){
+					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movDown, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+				}
+
 			}
 
 		}
-		mov = CCSequence::create(mov, CCCallFunc::create(this, callfunc_selector(MapTest::deMove)), NULL, NULL);
-		t->runAction(mov);
+
+		t->runAction(CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movOver, this)), CallFunc::create(CC_CALLBACK_0(MapTest::deMove, this)), NULL));
+		//t->runAction(mov);
 		this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(ccp(x * 30, y * 30));
 		allPlayer[nowNum].p.setPos(x, y);
 		allPlayer[nowNum].p.yidong = 0;
