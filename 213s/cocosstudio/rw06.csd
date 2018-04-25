@@ -1,9 +1,9 @@
 <GameFile>
-  <PropertyGroup Name="rw06" Type="Node" ID="d07773b6-3e9e-46b0-8529-64b2928684c4" Version="3.10.0.0" />
+  <PropertyGroup Name="rw06" Type="Node" ID="990216a6-c324-4822-8eba-a60758240a58" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="150" Speed="1.0000">
-        <Timeline ActionTag="1773702797" Property="FileData">
+        <Timeline ActionTag="1481650833" Property="FileData">
           <TextureFrame FrameIndex="0" Tween="False">
             <TextureFile Type="Normal" Path="player/BOSS3/1.png" Plist="" />
           </TextureFrame>
@@ -54,26 +54,18 @@
           </TextureFrame>
         </Timeline>
       </Animation>
-      <ObjectData Name="Node" Tag="217" ctype="GameNodeObjectData">
+      <ObjectData Name="Node" Tag="11" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="Sprite_1" ActionTag="1773702797" Tag="218" IconVisible="False" RightMargin="-34.0000" TopMargin="-47.0000" ctype="SpriteObjectData">
-<<<<<<< HEAD
-            <Size X="30.0000" Y="47.0000" />
-=======
-            <Size X="36.0000" Y="47.0000" />
->>>>>>> a7d05040ca0378caaf883a384d63b0fe1d4740bc
+          <AbstractNodeData Name="Sprite_1" ActionTag="1481650833" Tag="19" IconVisible="False" RightMargin="-46.0000" TopMargin="-46.0000" ctype="SpriteObjectData">
+            <Size X="33.0000" Y="49.0000" />
             <AnchorPoint />
             <Position />
-            <Scale ScaleX="0.6250" ScaleY="0.6250" />
+            <Scale ScaleX="0.6000" ScaleY="0.6000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
-<<<<<<< HEAD
-            <FileData Type="Normal" Path="player/BOSS3/1.png" Plist="" />
-=======
-            <FileData Type="Normal" Path="player/BOSS3/3.png" Plist="" />
->>>>>>> a7d05040ca0378caaf883a384d63b0fe1d4740bc
+            <FileData Type="Normal" Path="player/BOSS3/13.png" Plist="" />
             <BlendFunc Src="1" Dst="771" />
           </AbstractNodeData>
         </Children>

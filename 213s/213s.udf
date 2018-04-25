@@ -10,16 +10,18 @@
     <Item Key="TabsParamsKey">
       <Value ctype="TabsInfo">
         <OpenedDocuments>
+          <FilePathData Path="rw00.csd" />
+          <FilePathData Path="rw01.csd" />
+          <FilePathData Path="rw02.csd" />
+          <FilePathData Path="rw03.csd" />
+          <FilePathData Path="rw04.csd" />
+          <FilePathData Path="rw06.csd" />
+          <FilePathData Path="rw05.csd" />
           <FilePathData Path="rw07.csd" />
-          <FilePathData Path="rw08.csd" />
           <FilePathData Path="rw09.csd" />
           <FilePathData Path="rw10.csd" />
-          <FilePathData Path="rw11.csd" />
-          <FilePathData Path="rw12.csd" />
-          <FilePathData Path="rw13.csd" />
-          <FilePathData Path="rw14.csd" />
         </OpenedDocuments>
-        <ActiveDocument Path="rw14.csd" />
+        <ActiveDocument Path="rw10.csd" />
       </Value>
     </Item>
   </Properties>
