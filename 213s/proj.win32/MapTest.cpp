@@ -94,12 +94,12 @@ bool MapTest::init()
 	 *测试Buff类的实现，为玩家控制角色添加BUFF
 	 *2018年2月8日 18:37:09
 	 */
-	allPlayer[1].buffs[1] = Buff::getBuff(SUOZU, 1, 1);
+	//allPlayer[1].buffs[1] = Buff::getBuff(SUOZU, 1, 1);
 	/*测试代码:
 	*添加测试技能1给玩家角色
 	*2018年2月20日 17:26:15
 	*/
-	allPlayer[2].p.skillNames[0] = SkillNameEnum::TEST1;
+	//allPlayer[2].p.skillNames[0] = SkillNameEnum::TEST1;
 
 	/*地图参数初始化*/
 	for (int i = 0; i < 20; i++){
@@ -1528,15 +1528,15 @@ void MapTest::winL()
 			   int l = 0;
 			   int w = 0;
 			   for (int i = 0; i < 4; i++){
-				   if (allPlayer[i].p.name == "player3" &&allPlayer[i].a == 0){
+				   if (allPlayer[i].p.name == "beishier" &&allPlayer[i].a == 0){
 					   l = 1;
 					   break;
 				   }
 			   }
-			   for (int i = 0; i < 20; i++){
-				   if (allPlayer[i].p.name == "boss2" && allPlayer[i].a == 0){
-					   w = 1;
-					   break;
+			   w = 1;
+			   for (int i = 4; i < 20; i++){
+				   if (allPlayer[i].a == 1){
+					   w = 0;
 				   }
 			   }
 			   if (l == 1){

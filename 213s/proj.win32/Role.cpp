@@ -405,7 +405,221 @@ Player liaoji3(int Lv, int x, int y, int tag)
 	return p;
 }
 
+Player dongsan(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("dongsan");
+	p.setPictureName("rw00.csb");
+	p.setHp(300 + Lv * 50);
+	p.setAtt(20 + Lv * 10);
+	p.setAtMov(2);
+	p.setDef(5 + Lv);
+	p.setSp(11);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(3);
+	return p;
+}
 
+Player nanliu(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("nanliu");
+	p.setPictureName("rw00.csb");
+	p.setHp(200 + Lv * 50);
+	p.setAtt(20 + Lv * 10);
+	p.setAtMov(2);
+	p.setDef(2 + Lv);
+	p.setSp(15);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(4);
+	return p;
+}
 
+Player xijiu(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("xijiu");
+	p.setPictureName("rw02.csb");
+	p.setHp(150 + Lv * 50);
+	p.setAtt(30 + Lv * 10);
+	p.setAtMov(3);
+	p.setDef(1 + Lv);
+	p.setSp(12);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(3);
+	return p;
+}
+
+Player beishier(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("beishier");
+	p.setPictureName("rw03.csb");
+	p.setHp(300 + Lv * 50);
+	p.setAtt(25 + Lv * 10);
+	p.setAtMov(3);
+	p.setDef(3 + Lv);
+	p.setSp(13);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(3);
+	return p;
+}
+
+Player jiashi(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("jiashi");
+	p.setPictureName("rw04.csb");
+	p.setHp(1500 + Lv * 50);
+	p.setAtt(40 + Lv * 10);
+	p.setAtMov(1);
+	p.setDef(10 + Lv);
+	p.setSp(10);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(3);
+	return p;
+}
+
+Player wumianzhe(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("wumianzhe");
+	p.setPictureName("rw05.csb");
+	p.setHp(500 + Lv * 50);
+	p.setAtt(60 + Lv * 10);
+	p.setAtMov(100);
+	p.setDef(1 + Lv);
+	p.setSp(15);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(5);
+	return p;
+}
+
+Player mowang(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("mowang");
+	p.setPictureName("rw06.csb");
+	p.setHp(1200 + Lv * 50);
+	p.setAtt(100 + Lv * 10);
+	p.setAtMov(3);
+	p.setDef(6 + Lv);
+	p.setSp(14);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(4);
+	return p;
+}
+
+Player jinzhan(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("jinzhan");
+	if (rand() % 2 != 0){
+		p.setPictureName("rw07.csb");
+	}
+	else{
+		p.setPictureName("rw08.csb");
+	}
+	p.setHp(200 + Lv * 50);
+	p.setAtt(20 + Lv * 10);
+	p.setAtMov(1);
+	p.setDef(3 + Lv);
+	p.setSp(10);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(3);
+	return p;
+}
+
+Player yuancheng(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("yuancheng");
+	if (rand() % 2 != 0){
+		p.setPictureName("rw09.csb");
+	}
+	else{
+		p.setPictureName("rw10.csb");
+	}
+	p.setHp(100 + Lv * 50);
+	p.setAtt(30 + Lv * 10);
+	p.setAtMov(3);
+	p.setDef(1 + Lv);
+	p.setSp(12);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(3);
+	return p;
+}
+
+Player roudun(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("roudun");
+	p.setPictureName("rw11.csb");
+	p.setHp(800 + Lv * 50);
+	p.setAtt(30 + Lv * 10);
+	p.setAtMov(1);
+	p.setDef(5 + Lv);
+	p.setSp(10);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(2);
+	return p;
+}
+
+Player ying(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("ying");
+	p.setPictureName("rw12.csb");
+	p.setHp(300 + Lv * 50);
+	p.setAtt(40 + Lv * 10);
+	p.setAtMov(2);
+	p.setDef(2 + Lv);
+	p.setSp(15);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(5);
+	return p;
+}
+
+Player quan(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("quan");
+	p.setPictureName("rw13.csb");
+	p.setHp(200 + Lv * 50);
+	p.setAtt(50 + Lv * 10);
+	p.setAtMov(1);
+	p.setDef(3 + Lv);
+	p.setSp(14);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(4);
+	return p;
+}
+Player jianke(int Lv, int x, int y, int tag)
+{
+	Player p;
+	p.setName("jianke");
+	p.setPictureName("rw14.csb");
+	p.setHp(500 + Lv * 50);
+	p.setAtt(80 + Lv * 10);
+	p.setAtMov(2);
+	p.setDef(3 + Lv);
+	p.setSp(12);
+	p.setPos(x, y);
+	p.setTag(tag);
+	p.setMov(4);
+	return p;
+}
 
 
