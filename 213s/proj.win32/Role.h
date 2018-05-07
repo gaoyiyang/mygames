@@ -84,6 +84,8 @@ Player liaoji0(int Lv, int x, int y, int tag);//僚机0
 Player liaoji1(int Lv, int x, int y, int tag);//僚机1
 Player liaoji2(int Lv, int x, int y, int tag);//僚机2
 Player liaoji3(int Lv, int x, int y, int tag);//僚机3
+string getMapFile(int);
+void setPlayers(int);
 
 #endif //_ROLE_H__
 

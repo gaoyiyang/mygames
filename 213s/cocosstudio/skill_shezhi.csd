@@ -16,26 +16,26 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="zt/skill_sz.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_3" ActionTag="425605244" Tag="74" IconVisible="False" LeftMargin="34.1595" RightMargin="901.8405" TopMargin="315.4461" BottomMargin="24.5539" IsCustomSize="True" FontSize="24" LabelText="已拥有技能" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+          <AbstractNodeData Name="Text_3" ActionTag="425605244" Tag="74" IconVisible="False" LeftMargin="648.1421" RightMargin="287.8579" TopMargin="34.1705" BottomMargin="305.8295" IsCustomSize="True" FontSize="24" LabelText="技能效果" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
             <Size X="24.0000" Y="200.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
-            <Position X="46.1595" Y="124.5539" />
+            <Position X="660.1421" Y="405.8295" />
             <Scale ScaleX="1.0000" ScaleY="1.1174" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition X="0.0481" Y="0.2307" />
+            <PrePosition X="0.6876" Y="0.7515" />
             <PreSize X="0.0250" Y="0.3704" />
             <FontResource Type="Normal" Path="abc.ttf" Plist="" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Text_1" ActionTag="-1250903332" Tag="73" IconVisible="False" LeftMargin="12.1691" RightMargin="695.8309" TopMargin="13.9261" BottomMargin="418.0739" FontSize="36" LabelText="已装备技能：&#xA;（点击右侧按钮&#xA;移除技能）" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
-            <Size X="252.0000" Y="108.0000" />
+          <AbstractNodeData Name="Text_1" ActionTag="-1250903332" Tag="73" IconVisible="False" LeftMargin="30.1691" RightMargin="713.8309" TopMargin="31.9261" BottomMargin="436.0739" FontSize="36" LabelText="已拥有技能：&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="216.0000" Y="72.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="138.1691" Y="472.0739" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.1439" Y="0.8742" />
-            <PreSize X="0.2625" Y="0.2000" />
+            <PreSize X="0.2250" Y="0.1333" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="127" G="127" B="127" />
           </AbstractNodeData>

@@ -6,13 +6,13 @@
       <ObjectData Name="Layer" Tag="35" ctype="GameLayerObjectData">
         <Size X="960.0000" Y="540.0000" />
         <Children>
-          <AbstractNodeData Name="Image_10" ActionTag="-694430286" Tag="289" IconVisible="False" LeftEage="132" RightEage="132" TopEage="102" BottomEage="102" Scale9OriginX="132" Scale9OriginY="102" Scale9Width="236" Scale9Height="108" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_10" ActionTag="-694430286" Tag="289" IconVisible="False" TopMargin="-3.1262" BottomMargin="3.1262" LeftEage="132" RightEage="132" TopEage="102" BottomEage="102" Scale9OriginX="132" Scale9OriginY="102" Scale9Width="236" Scale9Height="108" ctype="ImageViewObjectData">
             <Size X="960.0000" Y="540.0000" />
             <AnchorPoint />
-            <Position />
+            <Position Y="3.1262" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
-            <PrePosition />
+            <PrePosition Y="0.0058" />
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="zt/6598070322239617603.jpg" Plist="" />
           </AbstractNodeData>
@@ -32,7 +32,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="FileNode_1" ActionTag="1989922207" Tag="1" IconVisible="True" LeftMargin="160.0000" RightMargin="800.0000" TopMargin="540.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="FileNode_1" ActionTag="1989922207" IconVisible="True" LeftMargin="160.0000" RightMargin="800.0000" TopMargin="540.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <AnchorPoint />
             <Position X="160.0000" />
@@ -42,7 +42,7 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="p1shezhi.csd" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="FileNode_4" ActionTag="-1947463069" IconVisible="True" RightMargin="960.0000" TopMargin="540.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
+          <AbstractNodeData Name="FileNode_4" ActionTag="-1947463069" Tag="1" IconVisible="True" RightMargin="960.0000" TopMargin="540.0000" StretchWidthEnable="False" StretchHeightEnable="False" InnerActionSpeed="1.0000" CustomSizeEnabled="False" ctype="ProjectNodeObjectData">
             <Size X="0.0000" Y="0.0000" />
             <AnchorPoint />
             <Position />
@@ -71,6 +71,30 @@
             <PrePosition X="0.5000" />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="p3shezhi.csd" Plist="" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="Text_2" ActionTag="2101328199" Tag="375" IconVisible="False" LeftMargin="666.5000" RightMargin="186.5000" TopMargin="25.5000" BottomMargin="485.5000" FontSize="24" LabelText="当前关卡：" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+            <Size X="107.0000" Y="29.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="720.0000" Y="500.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="0" B="0" />
+            <PrePosition X="0.7500" Y="0.9259" />
+            <PreSize X="0.1115" Y="0.0537" />
+            <FontResource Type="Normal" Path="abc.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
+          </AbstractNodeData>
+          <AbstractNodeData Name="mapNum" ActionTag="628130759" Tag="376" IconVisible="False" LeftMargin="793.0000" RightMargin="153.0000" TopMargin="25.5000" BottomMargin="485.5000" FontSize="24" LabelText="0" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="14.0000" Y="29.0000" />
+            <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
+            <Position X="800.0000" Y="500.0000" />
+            <Scale ScaleX="1.0000" ScaleY="1.0000" />
+            <CColor A="255" R="255" G="0" B="0" />
+            <PrePosition X="0.8333" Y="0.9259" />
+            <PreSize X="0.0146" Y="0.0537" />
+            <FontResource Type="Normal" Path="abc.ttf" Plist="" />
+            <OutlineColor A="255" R="255" G="0" B="0" />
+            <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

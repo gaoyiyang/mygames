@@ -18,10 +18,10 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="127" G="127" B="127" />
           </AbstractNodeData>
-          <AbstractNodeData Name="jineng" ActionTag="-1189160632" Tag="13" IconVisible="False" LeftMargin="-2.0158" RightMargin="-147.9842" TopMargin="-33.9845" BottomMargin="-2.0155" TouchEnable="True" FontSize="36" ButtonText="技能设置" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="jineng" ActionTag="-1189160632" Tag="13" IconVisible="False" RightMargin="-150.0000" TopMargin="-36.0000" TouchEnable="True" FontSize="36" ButtonText="技能设置" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="150.0000" Y="36.0000" />
             <AnchorPoint />
-            <Position X="-2.0158" Y="-2.0155" />
+            <Position />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />

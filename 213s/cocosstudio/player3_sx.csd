@@ -1,19 +1,19 @@
 <GameFile>
-  <PropertyGroup Name="player2_sx_0" Type="Scene" ID="67f7373b-c059-48ba-86b2-9d3bc2f4b519" Version="3.10.0.0" />
+  <PropertyGroup Name="player3_sx" Type="Scene" ID="67f7373b-c059-48ba-86b2-9d3bc2f4b519" Version="3.10.0.0" />
   <Content ctype="GameProjectContent">
     <Content>
       <Animation Duration="0" Speed="1.0000" />
       <ObjectData Name="Scene" Tag="88" ctype="GameNodeObjectData">
         <Size X="960.0000" Y="540.0000" />
         <Children>
-          <AbstractNodeData Name="Text_1" ActionTag="923347971" Tag="102" IconVisible="False" LeftMargin="60.0251" RightMargin="809.9749" TopMargin="138.1276" BottomMargin="365.8724" FontSize="36" LabelText="学生1" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
-            <Size X="90.0000" Y="36.0000" />
+          <AbstractNodeData Name="Text_1" ActionTag="923347971" Tag="102" IconVisible="False" LeftMargin="51.0251" RightMargin="800.9749" TopMargin="138.1276" BottomMargin="365.8724" FontSize="36" LabelText="北十二" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="TextObjectData">
+            <Size X="108.0000" Y="36.0000" />
             <AnchorPoint ScaleX="0.5000" ScaleY="0.5000" />
             <Position X="105.0251" Y="383.8724" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition X="0.1094" Y="0.7109" />
-            <PreSize X="0.0938" Y="0.0667" />
+            <PreSize X="0.1125" Y="0.0667" />
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
@@ -165,7 +165,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_1" ActionTag="-1169112670" Tag="116" IconVisible="False" RightMargin="760.0000" TopMargin="190.0000" LeftEage="66" RightEage="66" TopEage="115" BottomEage="115" Scale9OriginX="66" Scale9OriginY="115" Scale9Width="68" Scale9Height="120" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_1" ActionTag="-1169112670" Tag="116" IconVisible="False" RightMargin="760.0000" TopMargin="190.0000" LeftEage="66" RightEage="66" TopEage="115" BottomEage="115" Scale9OriginX="66" Scale9OriginY="115" Scale9Width="243" Scale9Height="831" ctype="ImageViewObjectData">
             <Size X="200.0000" Y="350.0000" />
             <AnchorPoint />
             <Position />
@@ -173,7 +173,7 @@
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.2083" Y="0.6481" />
-            <FileData Type="Normal" Path="player001.png" Plist="" />
+            <FileData Type="Normal" Path="player003.png" Plist="" />
           </AbstractNodeData>
         </Children>
       </ObjectData>

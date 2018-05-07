@@ -11,7 +11,8 @@ using namespace std;
 enum SkillNameEnum{
 	NULLNAME,
 	//测试技能1
-	TEST1
+	TEST1,
+	SKILL102
 };
 enum SkillTypeEnum{
 	NULLTYPE,
@@ -54,5 +55,17 @@ class TestSkill : public Skill{
 public:
 	//需要重写一个构造函数，一个skilResult函数
 	TestSkill(int skillLevel);
+	cocos2d::Action *skillResult(ssp* players[]);
+};
+
+class SKILL102 : public Skill{
+public:
+	SKILL102(int skillLevel);
+	cocos2d::Action *skillResult(ssp* players[]);
+};
+class Skill102 : public Skill{
+public:
+	//需要重写一个构造函数，一个skilResult函数
+	Skill102(int skillLevel);
 	cocos2d::Action *skillResult(ssp* players[]);
 };

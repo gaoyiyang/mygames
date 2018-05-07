@@ -50,6 +50,7 @@ public:
 	// implement the "static create()" method manually
 	CREATE_FUNC(MapTest);
 public:
+	static int mapNum;
 	void setMap();//设置当前地图的各项数据，主要为各个棋子的初始状态坐标以及标记障碍物
 	void start(float);//开始进行战斗
 	void backMenu(Ref* pSender, Widget::TouchEventType type);

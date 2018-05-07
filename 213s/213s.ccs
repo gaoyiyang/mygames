@@ -16,6 +16,7 @@
         </PlistImageFolder>
         <Folder Name="dt">
           <TmxFile Name="00(dt).tmx" />
+          <Image Name="01(dt).png" />
           <TmxFile Name="01(dt).tmx" />
           <TmxFile Name="02(dt).tmx" />
           <TmxFile Name="03(dt).tmx" />
@@ -464,9 +465,9 @@
         <Project Name="Skeleton.csd" Type="Skeleton" />
         <Project Name="Skeleton1.csd" Type="Skeleton" />
         <Project Name="skill_shezhi.csd" Type="Scene" />
+        <Project Name="skill_skill101.csd" Type="Node" />
+        <Project Name="skill_skill102.csd" Type="Node" />
         <Project Name="skill_testSkill1.csd" Type="Node" />
-        <Project Name="skill101.csd" Type="Node" />
-        <Project Name="skill102.csd" Type="Node" />
         <Project Name="skill103.csd" Type="Node" />
         <Project Name="skill104.csd" Type="Node" />
         <Project Name="skill201.csd" Type="Node" />

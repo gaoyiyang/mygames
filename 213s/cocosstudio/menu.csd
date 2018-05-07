@@ -16,7 +16,7 @@
             <PreSize X="1.0000" Y="1.0000" />
             <FileData Type="Normal" Path="zt/411.jpg" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_1" ActionTag="630186102" Tag="33" IconVisible="False" LeftMargin="380.0803" RightMargin="379.9197" TopMargin="185.1302" BottomMargin="304.8698" TouchEnable="True" FontSize="24" ButtonText="开始学习" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_1" ActionTag="630186102" Tag="33" IconVisible="False" LeftMargin="380.0803" RightMargin="379.9197" TopMargin="185.1302" BottomMargin="304.8698" TouchEnable="True" FontSize="24" ButtonText="开始游戏" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="200.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.4942" ScaleY="0.4432" />
             <Position X="478.9203" Y="327.0298" />
@@ -43,7 +43,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_2" ActionTag="495706031" Tag="39" IconVisible="False" LeftMargin="380.1525" RightMargin="379.8475" TopMargin="279.0649" BottomMargin="210.9351" TouchEnable="True" FontSize="24" ButtonText="怎样学习" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_2" ActionTag="495706031" Tag="39" IconVisible="False" LeftMargin="380.1525" RightMargin="379.8475" TopMargin="279.0649" BottomMargin="210.9351" TouchEnable="True" FontSize="24" ButtonText="游戏设置" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="200.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.4942" ScaleY="0.4432" />
             <Position X="478.9925" Y="233.0951" />
@@ -59,7 +59,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_3" ActionTag="1288786565" Tag="40" IconVisible="False" LeftMargin="380.1525" RightMargin="379.8475" TopMargin="374.4149" BottomMargin="115.5851" TouchEnable="True" FontSize="24" ButtonText="谁在学习" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_3" ActionTag="1288786565" Tag="40" IconVisible="False" LeftMargin="380.1525" RightMargin="379.8475" TopMargin="374.4149" BottomMargin="115.5851" TouchEnable="True" FontSize="24" ButtonText="制作人员" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="200.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.4942" ScaleY="0.4432" />
             <Position X="478.9925" Y="137.7451" />
@@ -75,7 +75,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Button_4" ActionTag="984274494" Tag="41" IconVisible="False" LeftMargin="380.1525" RightMargin="379.8475" TopMargin="466.9419" BottomMargin="23.0581" TouchEnable="True" FontSize="24" ButtonText="放弃学习" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="Button_4" ActionTag="984274494" Tag="41" IconVisible="False" LeftMargin="380.1525" RightMargin="379.8475" TopMargin="466.9419" BottomMargin="23.0581" TouchEnable="True" FontSize="24" ButtonText="结束游戏" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="200.0000" Y="50.0000" />
             <AnchorPoint ScaleX="0.4942" ScaleY="0.4432" />
             <Position X="478.9925" Y="45.2181" />
@@ -101,7 +101,7 @@
             <PreSize X="0.2073" Y="0.8630" />
             <FileData Type="Normal" Path="player0.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="Image_2" ActionTag="-651935679" Tag="693" IconVisible="False" LeftMargin="784.8089" RightMargin="-199.8088" TopMargin="-126.0120" BottomMargin="-394.9880" LeftEage="123" RightEage="123" TopEage="350" BottomEage="350" Scale9OriginX="123" Scale9OriginY="350" Scale9Width="129" Scale9Height="361" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="Image_2" ActionTag="-651935679" Tag="693" IconVisible="False" LeftMargin="784.7932" RightMargin="-199.7932" TopMargin="-126.0133" BottomMargin="-394.9867" LeftEage="123" RightEage="123" TopEage="350" BottomEage="350" Scale9OriginX="123" Scale9OriginY="350" Scale9Width="129" Scale9Height="361" ctype="ImageViewObjectData">
             <Size X="375.0000" Y="1061.0000" />
             <AnchorPoint ScaleX="-0.1556" ScaleY="0.6264" />
             <Position X="726.4432" Y="269.6237" />

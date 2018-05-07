@@ -29,6 +29,9 @@ using namespace cocostudio::timeline;
 using namespace CocosDenshion;
 using namespace std;
 
+//设置当前关卡
+int MapTest::mapNum = 0;
+
 int fff = 0;
 
 //移动方向
@@ -124,9 +127,6 @@ bool MapTest::init()
 	auto rootNode = CSLoader::createNode("MapTest.csb");
 	addChild(rootNode, 1);
 
-	/*LabelTTF* label = LabelTTF::create("哈哈哈哈", "Marker Felt", 30);
-	label->setPosition(ccp(100, 100));
-	this->addChild(label, 100);*/
 	setMap();
 
 	//设置能量显示
@@ -271,6 +271,9 @@ void MapTest::start(float f)
 		if (gameFlag == RUN){
 			gameFlag = -1;
 			if (nowNum < 4){
+				Skill::power += 5;
+				if (Skill::power > 100)
+					Skill::power = 100;
 				unStartButton();
 				startButton();
 			}
@@ -293,7 +296,7 @@ void MapTest::start(float f)
 		}
 		if (gameFlag == SKILL){
 			gameFlag = -1;
-			if (nowNum < 3){
+			if (nowNum < 4){
 				//显示玩家技能按钮
 				auto player = allPlayer[nowNum].p;
 				//初始化技能数组
@@ -319,7 +322,7 @@ void MapTest::start(float f)
 					}
 				}
 			}
-			else if (nowNum == 3){
+			/*else if (nowNum == 3){
 				auto g1 = (Button*)CSLoader::createNode("all_jineng.csb")->getChildByName("400");
 				g1->setPosition(ccp(750, 160));
 				g1->setName("400");
@@ -332,7 +335,7 @@ void MapTest::start(float f)
 				g2->addTouchEventListener(CC_CALLBACK_2(MapTest::nSkill, this));
 				addChild(g2, 100);
 				if (guanghuan == 1)g2->setEnabled(false);
-			}
+			}*/
 		}
 	}
 	else {
@@ -363,51 +366,51 @@ void MapTest::setMap()
 	Vec2 vpos;
 	Node *nod;
 	Player test;
-	if (gameTime == 0){
+	if (mapNum != -1){
 		
-		gameLoad();
-
-
+		gameLoad();		string mapName = getMapFile(mapNum);
+		diban = CSLoader::createNode(mapName);
+		this->addChild(diban, 0);
 		/**
 		*	设置坐标
 		*/
 
-		string filename = "config/setting.json";
+		//string filename = "config/setting.json";
 
-		rapidjson::Document doc;
-		//读取文件数据，初始化doc  
-		std::string data = FileUtils::getInstance()->getStringFromFile(filename);
+		//rapidjson::Document doc;
+		////读取文件数据，初始化doc  
+		//std::string data = FileUtils::getInstance()->getStringFromFile(filename);
 
-		doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
+		//doc.Parse<rapidjson::kParseDefaultFlags>(data.c_str());
 
-		for (unsigned int i = 0; i < doc.Size(); i++)
+		//for (unsigned int i = 0; i < doc.Size(); i++)
 
-		{
+		//{
 
-			//逐个提取数组元素（声明的变量必须为引用）  
+		//	//逐个提取数组元素（声明的变量必须为引用）  
 
-			rapidjson::Value &v = doc[i];
-			allPlayer[v["tag"].GetInt()].p.setPos(v["x"].GetInt(), v["y"].GetInt());
+		//	rapidjson::Value &v = doc[i];
+		//	allPlayer[v["tag"].GetInt()].p.setPos(v["x"].GetInt(), v["y"].GetInt());
 
-		}
-		data.clear();
-		/*设置地图*/
-		rapidjson::Document doc1;
-		std::string data1 = FileUtils::getInstance()->getStringFromFile("config/setting_map.json");
+		//}
+		//data.clear();
+		///*设置地图*/
+		//rapidjson::Document doc1;
+		//std::string data1 = FileUtils::getInstance()->getStringFromFile("config/setting_map.json");
 
-		doc1.Parse<rapidjson::kParseDefaultFlags>(data1.c_str());
+		//doc1.Parse<rapidjson::kParseDefaultFlags>(data1.c_str());
 
-		for (unsigned int i = 0; i < doc1.Size(); i++)
+		//for (unsigned int i = 0; i < doc1.Size(); i++)
 
-		{
+		//{
 
-			//逐个提取数组元素（声明的变量必须为引用）  
+		//	//逐个提取数组元素（声明的变量必须为引用）  
 
-			rapidjson::Value &v = doc1[i];
-			diban = CSLoader::createNode(v["mapFile"].GetString());
-			this->addChild(diban, 0);
-		}
-		data1.clear();
+		//	rapidjson::Value &v = doc1[i];
+		//	diban = CSLoader::createNode(v["mapFile"].GetString());
+		//	this->addChild(diban, 0);
+		//}
+		//data1.clear();
 
 		//diban = CSLoader::createNode("MapTest2.csb");
 		//diban = CSLoader::createNode("Map02.csb");
@@ -416,7 +419,7 @@ void MapTest::setMap()
 		allPlayer[1].p.setPos(2, 3);
 		allPlayer[2].p.setPos(4, 2);
 		allPlayer[3].p.setPos(3, 2);*/
-		allPlayer[4].a = 1;
+		/*allPlayer[4].a = 1;
 		allPlayer[4].p = liaoji0(20, 15, 5, 120001);
 		allPlayer[5].a = 1;
 		allPlayer[5].p = liaoji1(20, 15, 15, 120002);
@@ -431,7 +434,7 @@ void MapTest::setMap()
 		allPlayer[10].a = 1;
 		allPlayer[10].p = d2(20, 6, 5, 120005);
 		allPlayer[11].a = 1;
-		allPlayer[11].p = d2(20, 6, 6, 120004);
+		allPlayer[11].p = d2(20, 6, 6, 120004);*/
 	}
 	for (int i = 0; i < 20; i++){
 		if (allPlayer[i].a == 1){
@@ -472,7 +475,10 @@ void MapTest::backMenu(Ref* pSender, Widget::TouchEventType type)
 	{
 	case Widget::TouchEventType::BEGAN:
 	{
-										  CCDirector::sharedDirector()->replaceScene(scene);
+										  //CCDirector::sharedDirector()->replaceScene(scene);
+										  for (int i = 4; i < 20; i++){
+											  allPlayer[i].p.hp = 0;
+										  }
 	}break;
 	default:break;
 	}
@@ -498,39 +504,57 @@ void MapTest::move(Ref* pSender, Widget::TouchEventType type)
 										  CCSequence* mov = CCSequence::create(CCMoveTo::create(0.0, t->getPosition()), NULL, NULL, NULL);
 										  int ox = t->getPositionX() / 30;
 										  int oy = t->getPositionY() / 30;
+										  int overMove;
 										  for (int i = 0; i < 10; i++){
 											  if (pxy[i].num == 1){
 												  if ((int)(pxy[i].x / 30) - ox > 0){
-													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movRight,this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+													  overMove = 1;
 												  }
 												  if ((int)(pxy[i].x / 30) - ox < 0){
-													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movLeft, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
+													  overMove = 2;
+												  }if ((int)(pxy[i].y / 30) - oy > 0){
+														  overMove = 3;
+													  }
+													  if ((int)(pxy[i].y / 30) - oy < 0){
+														  overMove = 4;
+													  }
+													  mov = CCSequence::create(mov, CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL, NULL);
+
 												  }
-												  if ((int)(pxy[i].y / 30) - oy > 0){
-													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movUp, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
-												  }
-												  if ((int)(pxy[i].y / 30) - oy < 0){
-													  mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movDown, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
-												  }
-												  
+
 											  }
-											 
-										  }
-										  
-										  t->runAction(CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movOver, this)), NULL, NULL));
-										  
-										  this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(node->getPosition());
-										 allPlayer[nowNum].p.setPos(int(node->getPositionX() / 30),
-											  int(node->getPositionY() / 30));
-										  MapTest::deMove();
-										  gameFlag = RUN;
-										  allPlayer[nowNum].p.yidong = 0;
-										  //确认地图上人物位置
-										  initDFS();
-	}break;
+
+											  auto action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+											  //上
+											  if (overMove == 3)
+												  action->gotoFrameAndPlay(120, 150, true);
+
+											  //下
+											  if (overMove == 4)
+												  action->gotoFrameAndPlay(0, 30, true);
+											  //左
+											  if (overMove == 2)
+												  action->gotoFrameAndPlay(40, 70, true);
+											  //右
+											  if (overMove == 1)
+												  action->gotoFrameAndPlay(80, 110, true);
+											  t->stopAllActions();
+											  t->runAction(action);
+											  t->runAction(mov);
+
+											  this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(node->getPosition());
+											  allPlayer[nowNum].p.setPos(int(node->getPositionX() / 30),
+												  int(node->getPositionY() / 30));
+											  MapTest::deMove();
+											  gameFlag = RUN;
+											  allPlayer[nowNum].p.yidong = 0;
+											  //确认地图上人物位置
+											  initDFS();
+										  }break;
 	default:break;
 	}
 }
+
 
 CCAction *cca = NULL;
 
@@ -800,7 +824,7 @@ void MapTest::AIatt()
 				mf[i] += 100 - (allPlayer[i].p.hp * 100) / allPlayer[i].p.maxHp;
 			}
 		}
-		if (allPlayer[nowNum].p.name == "boss2"){//boss2随机攻击目标
+		if (allPlayer[nowNum].p.name == "wumianzhe"){//boss2随机攻击目标
 			for (int i = 0; i < 4; i++)if (allPlayer[i].a == 1)mf[i] = rand() % 100;
 		}
 		int a = 0;
@@ -813,7 +837,7 @@ void MapTest::AIatt()
 			gameFlag = MOVE;
 		}
 		else {
-			if (allPlayer[nowNum].p.name != "boss2")att();
+			if (allPlayer[nowNum].p.name != "wumianzhe")att();
 			else boss2Att();
 		}
 	}
@@ -987,7 +1011,7 @@ void MapTest::AImove()
 				}
 			}
 		}
-		if (allPlayer[nowNum].p.name == "boss2"){//boss2移动机制,远离目标
+		if (allPlayer[nowNum].p.name == "wumianzhe"){//boss2移动机制,远离目标
 			for (int i = 0; i < 100; i++){
 				for (int j = 0; j < 100; j++){
 					if (winTag[i][j] == 1){
@@ -1000,7 +1024,7 @@ void MapTest::AImove()
 				}
 			}
 		}
-		if (allPlayer[nowNum].p.name == "liaoji0" || allPlayer[nowNum].p.name == "liaoji1" || allPlayer[nowNum].p.name == "liaoji2"){//僚机随机移动
+		if (allPlayer[nowNum].p.name == "liaoji1" || allPlayer[nowNum].p.name == "liaoji2" || allPlayer[nowNum].p.name == "liaoji3"){//僚机随机移动
 			int lwx[12];
 			int lwy[12];
 			int fl = 0;
@@ -1027,26 +1051,45 @@ void MapTest::AImove()
 		CCSequence* mov = CCSequence::create(CCMoveTo::create(0.0, t->getPosition()), NULL, NULL, NULL);
 		int ox = t->getPositionX() / 30;
 		int oy = t->getPositionY() / 30;
-		for (int i = 0; i < 10; i++){
-			if (pxy[i].num == 1){
-				if ((int)(pxy[i].x / 30) - ox > 0){
-					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movRight, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
-				}
-				if ((int)(pxy[i].x / 30) - ox < 0){
-					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movLeft, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
-				}
-				if ((int)(pxy[i].y / 30) - oy > 0){
-					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movUp, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
-				}
-				if ((int)(pxy[i].y / 30) - oy < 0){
-					mov = CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movDown, this)), CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL);
-				}
-
-			}
-
-		}
-
-		t->runAction(CCSequence::create(mov, CallFunc::create(CC_CALLBACK_0(MapTest::movOver, this)), CallFunc::create(CC_CALLBACK_0(MapTest::deMove, this)), NULL));
+		 int overMove;
+										  for (int i = 0; i < 10; i++){
+											  if (pxy[i].num == 1){
+												  if ((int)(pxy[i].x / 30) - ox > 0){
+													  overMove = 1;
+												  }
+												  if ((int)(pxy[i].x / 30) - ox < 0){
+													  overMove = 2;
+												  }
+												  if ((int)(pxy[i].y / 30) - oy > 0){
+													  overMove = 3;
+												  }
+												  if ((int)(pxy[i].y / 30) - oy < 0){
+													  overMove = 4;
+												  }
+												  mov = CCSequence::create(mov, CCMoveTo::create(0.2f, ccp(pxy[i].x, pxy[i].y)), NULL, NULL);
+					
+											  }
+											 
+										  }
+										  
+										  auto action = CSLoader::createTimeline(allPlayer[nowNum].p.pictureName);
+										  //上
+										  if (overMove == 3){
+											  action->gotoFrameAndPlay(120, 150, true);
+										  }
+										  //下
+										  if (overMove == 4)
+											  action->gotoFrameAndPlay(0, 30, true);
+										  //左
+										  if (overMove == 2)
+											  action->gotoFrameAndPlay(40, 70, true);
+										  //右
+										  if (overMove == 1)
+											  action->gotoFrameAndPlay(80, 110, true);
+										  t->stopAllActions();
+										  t->runAction(action);
+								
+		t->runAction(CCSequence::create(mov,CallFunc::create(CC_CALLBACK_0(MapTest::deMove, this)),NULL, NULL));
 		//t->runAction(mov);
 		this->getChildByTag(allPlayer[nowNum].p.tag)->setPosition(ccp(x * 30, y * 30));
 		allPlayer[nowNum].p.setPos(x, y);
@@ -1522,13 +1565,13 @@ void MapTest::buffTime()
 
 void MapTest::winL()
 {
-	switch (gameTime)
+	switch (0)
 	{
 	case 0:{
 			   int l = 0;
 			   int w = 0;
 			   for (int i = 0; i < 4; i++){
-				   if (allPlayer[i].p.name == "beishier" &&allPlayer[i].a == 0){
+				   if (allPlayer[i].p.name == "beishier" && allPlayer[i].a == 0 && mapNum > 3){
 					   l = 1;
 					   break;
 				   }

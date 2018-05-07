@@ -11,7 +11,7 @@ Skill::Skill()
 
 
 Skill* Skill::nowSkills[5];
-int Skill::power = 5;
+int Skill::power = 20;
 void Skill::initNowSkills(){
 	for (int i = 0; i < 5; i++){
 		Skill::nowSkills[i] = NULL;
@@ -78,8 +78,37 @@ Skill *Skill::getSkill(SkillNameEnum sne){
 		//case SkillNameEnum:
 		//	skill = new Skill(1);
 		//break;
+	case SKILL102:
+		skill = new Skill102(1);
+		break;
 	default:
 		break;
 	}
 	return skill;
+}
+
+Skill102::Skill102(int Level){
+	this->skillLevel = Level;
+	this->csbFileName = "skill102";
+	this->skillName = SKILL102;
+	this->skillType = MON;
+	this->skillconsume = 15;
+}
+
+cocos2d::Action *Skill102::skillResult(ssp* players[]){
+	cocos2d::Action *action = NULL;
+	//判断技能类型为对单体生效
+	if (skillType == MON || skillType == FMON){
+		//传入的数组参数players，第一个元素为施放技能的角色，其余元素为承受技能效果的角色
+		auto me = players[0];
+		auto he = players[1];
+		he->p.hp = he->p.hp - (me->p.att * 3 * (1 - he->p.def / (he->p.def + 10)));
+		me->p.hp = me->p.hp - (me->p.att * 3 * (1 - he->p.def / (he->p.def + 10)));
+		power -= 15;
+		//将自身可攻击以及可施放技能状态设为0
+		me->p.jineng = 0;
+		me->p.gongji = 0;
+	}
+	//返回一个动作
+	return action;
 }

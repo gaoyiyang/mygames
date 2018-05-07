@@ -146,31 +146,33 @@ void MapMenu::mapTest(Ref* pSender, Widget::TouchEventType type)
 void MapMenu::loading(float f)
 {
 	if (helloFlag == 0){
-		LoadingBar* l = (LoadingBar*)this->getChildByTag(1);
-		Text* t = (Text*)this->getChildByTag(2);
-		auto d = this->getChildByTag(3);
-		srand(time(NULL));
-		int ti = rand()%20 + 10;
-		l->setPercent(l->getPercent() + ti);
-		d->setPosition(ccp((l->getPercent() / 100) * 960, 20));
-		stringstream ss;
-		string str;
-		int b = l->getPercent();
-		ss << b;
-		ss >> str;
-		str = str + "%";
-		t->setText(str);
-		if (l->getPercent() == 100){
-			helloFlag = 1;
-			this->removeChildByTag(1);
-			this->removeChildByTag(2);
-			this->removeChildByTag(3);
-			this->removeChildByTag(5);
-			auto menu = CSLoader::createNode("Map.csb");
-			addChild(menu);
-			Button* button1 = dynamic_cast<Button*>(menu->getChildByName("0"));
-			button1->addTouchEventListener(CC_CALLBACK_2(MapMenu::mapTest, this));//添加监听
-		}
+		//LoadingBar* l = (LoadingBar*)this->getChildByTag(1);
+		//Text* t = (Text*)this->getChildByTag(2);
+		//auto d = this->getChildByTag(3);
+		//srand(time(NULL));
+		//int ti = rand()%20 + 10;
+		//l->setPercent(l->getPercent() + ti);
+		//d->setPosition(ccp((l->getPercent() / 100) * 960, 20));
+		//stringstream ss;
+		//string str;
+		//int b = l->getPercent();
+		//ss << b;
+		//ss >> str;
+		//str = str + "%";
+		//t->setText(str);
+		//if (l->getPercent() == 100){
+		//	helloFlag = 1;
+		//	this->removeChildByTag(1);
+		//	this->removeChildByTag(2);
+		//	this->removeChildByTag(3);
+		//	this->removeChildByTag(5);
+		//	auto menu = CSLoader::createNode("Map.csb");
+		//	addChild(menu);
+		//	Button* button1 = dynamic_cast<Button*>(menu->getChildByName("0"));
+		//	button1->addTouchEventListener(CC_CALLBACK_2(MapMenu::mapTest, this));//添加监听
+		//}
+		auto scene = OP::createScene();
+		CCDirector::sharedDirector()->replaceScene(scene);
 	}
 }
 
@@ -218,6 +220,7 @@ bool OP::init()
 	}
 	gameLoad();
 	auto node = CSLoader::createNode("Load.csb");
+	((Text*)node->getChildByName("mapNum"))->setText(nToS(MapTest::mapNum));
 	auto b_k = (Button *)node->getChildByName("kaishi");
 	b_k->addTouchEventListener(CC_CALLBACK_2(OP::kai, this));
 	for (int i = 0; i < 4; i++){
@@ -228,13 +231,14 @@ bool OP::init()
 			p1_sk->addTouchEventListener(CC_CALLBACK_2(OP::p1Sk, this));
 		}
 		if (allPlayer[i].a == 0){
-			node->removeChildByTag(i + 1);
+			node->removeChildByTag(i);
 		}
 	}
 	addChild(node);
-	auto l = CSLoader::createNode("all_map.csb")->getChildByName("map" + nToS(gameTime));
-	addChild(l);//添加任务说明
-	l->setPosition(ccp(660, 100));
+	gameTime = 1;
+	//auto l = CSLoader::createNode("all_map.csb")->getChildByName("map" + nToS(gameTime));
+	//addChild(l);//添加任务说明
+	//l->setPosition(ccp(660, 100));
 	return true;
 }
 
@@ -361,6 +365,7 @@ Scene* SK::createScene()
 	return scene;
 }
 
+#include "Skill.h"
 // on "init" you need to initialize your instance
 bool SK::init()
 {
@@ -371,7 +376,7 @@ bool SK::init()
 	}
 	auto rootNode = CSLoader::createNode("skill_shezhi.csb");
 	addChild(rootNode, 0);
-	for (int i = 0; i < 12; i++){
+	/*for (int i = 0; i < 12; i++){
 		if (allPlayer[opNum].p.skill[i] != 0){
 			auto node = CSLoader::createNode("all_jineng.csb");
 			auto b = (Button*)node->getChildByName(nToS(allPlayer[opNum].p.skill[i]));
@@ -380,7 +385,18 @@ bool SK::init()
 			b->addTouchEventListener(CC_CALLBACK_2(SK::getSkill, this));
 		}
 	}
-	nSkill();
+	nSkill();*/
+	for (int i = 0; i < 5; i++){
+		Skill* tskill = Skill::getSkill((SkillNameEnum)allPlayer[opNum].p.skillNames[i]);
+		if (tskill != NULL){
+			auto node = CSLoader::createNode("all_jineng.csb");
+			auto b = (Button*)node->getChildByName(tskill->csbFileName);
+			addChild(b, 2);
+			//b->setPosition(ccp(105 + (i % 4) * 105, (3 - i % 3) * 40 + 10));
+			b->setPosition(ccp(300, (5 - i % 5) * 40 + 300));
+			b->addTouchEventListener(CC_CALLBACK_2(SK::getSkill, this));
+		}
+	}
 	auto over = (Button*)rootNode->getChildByName("over");
 	over->addTouchEventListener(CC_CALLBACK_2(SK::over, this));
 	return true;
@@ -417,7 +433,7 @@ void SK::getSkill(Ref* pSender, Widget::TouchEventType type)
 	addChild(n, 1);
 	n->setName("skillText");
 	n->setPosition(ccp(690, 270));
-	int f = 1;
+	/*int f = 1;
 	for (int i = 0; i < 5; i++){
 		if (allPlayer[opNum].p.nSkill[i][0] == sToN(node->getName()))
 			f = 0;
@@ -430,7 +446,7 @@ void SK::getSkill(Ref* pSender, Widget::TouchEventType type)
 				break;
 			}
 		}
-	}
+	}*/
 	}break;
 	default:break;
 	}
@@ -573,15 +589,25 @@ bool WIN::init()
 	}
 	auto s = CSLoader::createNode("gameWin.csb");
 	addChild(s);
-	auto mov = CCSequence::create(CCMoveBy::create(3.0f, ccp(0, 0)), CCCallFunc::create(this, callfunc_selector(WIN::goMenu)), NULL, NULL);
+	auto mov = CCSequence::create(CCMoveBy::create(1.0f, ccp(0, 0)), CCCallFunc::create(this, callfunc_selector(WIN::goMenu)), NULL, NULL);
 	this->runAction(mov);
 	return true;
 }
 
 void WIN::goMenu()
 {
-	auto scene = HelloWorld::createScene();
-	CCDirector::sharedDirector()->replaceScene(scene);
+	MapTest::mapNum++;
+	if (MapTest::mapNum <= 5){
+		gameSave();
+		auto scene = OP::createScene();
+		CCDirector::sharedDirector()->replaceScene(scene);
+	}
+	else {
+		MapTest::mapNum = 1;
+		gameSave();
+		auto scene = HelloWorld::createScene();
+		CCDirector::sharedDirector()->replaceScene(scene);
+	}
 }
 
 Scene* LOSE::createScene()

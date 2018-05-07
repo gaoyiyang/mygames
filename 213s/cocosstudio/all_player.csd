@@ -6,7 +6,7 @@
       <ObjectData Name="Node" Tag="116" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="player2" ActionTag="-1885843916" Tag="999919" IconVisible="False" LeftMargin="-340.7744" RightMargin="190.7744" TopMargin="-183.2493" BottomMargin="33.2493" LeftEage="66" RightEage="66" TopEage="72" BottomEage="72" Scale9OriginX="66" Scale9OriginY="72" Scale9Width="68" Scale9Height="76" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="xijiu" ActionTag="-1885843916" Tag="999919" IconVisible="False" LeftMargin="-340.7744" RightMargin="190.7744" TopMargin="-183.2493" BottomMargin="33.2493" LeftEage="66" RightEage="66" TopEage="72" BottomEage="72" Scale9OriginX="66" Scale9OriginY="72" Scale9Width="68" Scale9Height="76" ctype="ImageViewObjectData">
             <Size X="150.0000" Y="150.0000" />
             <AnchorPoint />
             <Position X="-340.7744" Y="33.2493" />
@@ -27,7 +27,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="player1" ActionTag="1454400906" Tag="999919" IconVisible="False" LeftMargin="-192.9786" RightMargin="42.9786" TopMargin="-187.3890" BottomMargin="37.3890" LeftEage="105" RightEage="105" TopEage="86" BottomEage="86" Scale9OriginX="105" Scale9OriginY="86" Scale9Width="109" Scale9Height="89" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="nanliu" ActionTag="1454400906" Tag="999919" IconVisible="False" LeftMargin="-192.9786" RightMargin="42.9786" TopMargin="-187.3890" BottomMargin="37.3890" LeftEage="105" RightEage="105" TopEage="86" BottomEage="86" Scale9OriginX="105" Scale9OriginY="86" Scale9Width="109" Scale9Height="89" ctype="ImageViewObjectData">
             <Size X="150.0000" Y="150.0000" />
             <AnchorPoint />
             <Position X="-192.9786" Y="37.3890" />
@@ -47,17 +47,17 @@
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Default" Path="Default/ImageFile.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="player3" ActionTag="-454285203" Tag="1000051" IconVisible="False" LeftMargin="-189.4161" RightMargin="39.4161" TopMargin="13.3703" BottomMargin="-163.3703" LeftEage="123" RightEage="123" TopEage="151" BottomEage="151" Scale9OriginX="123" Scale9OriginY="151" Scale9Width="129" Scale9Height="156" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="beishier" ActionTag="-454285203" Tag="1000051" IconVisible="False" LeftMargin="-190.5373" RightMargin="40.5373" TopMargin="14.4913" BottomMargin="-164.4913" LeftEage="123" RightEage="123" TopEage="151" BottomEage="151" Scale9OriginX="123" Scale9OriginY="151" Scale9Width="129" Scale9Height="156" ctype="ImageViewObjectData">
             <Size X="150.0000" Y="150.0000" />
             <AnchorPoint />
-            <Position X="-189.4161" Y="-163.3703" />
+            <Position X="-190.5373" Y="-164.4913" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
             <PreSize X="0.0000" Y="0.0000" />
             <FileData Type="Normal" Path="zt/player003_touxiang.png" Plist="" />
           </AbstractNodeData>
-          <AbstractNodeData Name="player0" ActionTag="-1968403099" Tag="357" IconVisible="False" LeftMargin="-352.9074" RightMargin="202.9074" TopMargin="12.1544" BottomMargin="-162.1544" LeftEage="51" RightEage="51" TopEage="74" BottomEage="74" Scale9OriginX="51" Scale9OriginY="74" Scale9Width="53" Scale9Height="78" ctype="ImageViewObjectData">
+          <AbstractNodeData Name="dongsan" ActionTag="-1968403099" Tag="357" IconVisible="False" LeftMargin="-352.9074" RightMargin="202.9074" TopMargin="12.1544" BottomMargin="-162.1544" LeftEage="51" RightEage="51" TopEage="74" BottomEage="74" Scale9OriginX="51" Scale9OriginY="74" Scale9Width="53" Scale9Height="78" ctype="ImageViewObjectData">
             <Size X="150.0000" Y="150.0000" />
             <AnchorPoint />
             <Position X="-352.9074" Y="-162.1544" />

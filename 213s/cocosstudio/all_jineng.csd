@@ -6,10 +6,10 @@
       <ObjectData Name="Node" Tag="109" ctype="GameNodeObjectData">
         <Size X="0.0000" Y="0.0000" />
         <Children>
-          <AbstractNodeData Name="201" ActionTag="-570114403" Tag="260" IconVisible="False" LeftMargin="-1129.5057" RightMargin="1029.5057" TopMargin="-632.2583" BottomMargin="602.2583" TouchEnable="True" FontSize="20" ButtonText="火" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill201" ActionTag="-570114403" Tag="260" IconVisible="False" LeftMargin="-1127.3320" RightMargin="1027.3320" TopMargin="-632.2583" BottomMargin="602.2583" TouchEnable="True" FontSize="20" ButtonText="火" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
-            <Position X="-1129.5057" Y="602.2583" />
+            <Position X="-1127.3320" Y="602.2583" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="144" G="238" B="144" />
             <PrePosition />
@@ -22,7 +22,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="201_t" ActionTag="-859769047" Tag="261" IconVisible="False" LeftMargin="-1010.1213" RightMargin="740.1213" TopMargin="-795.7085" BottomMargin="525.7085" IsCustomSize="True" FontSize="20" LabelText="技能201:（10消耗，距离2）&#xA;火焰标记&#xA;对敌方单位造成攻击力150%的伤害。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill201_t" ActionTag="-859769047" Tag="261" IconVisible="False" LeftMargin="-1010.1213" RightMargin="740.1213" TopMargin="-795.7085" BottomMargin="525.7085" IsCustomSize="True" FontSize="20" LabelText="技能201:（10消耗，距离2）&#xA;火焰标记&#xA;对敌方单位造成攻击力150%的伤害。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="-1010.1213" Y="525.7085" />
@@ -34,7 +34,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="202" ActionTag="-1156533905" Tag="262" IconVisible="False" LeftMargin="-1135.6731" RightMargin="1035.6731" TopMargin="-328.6786" BottomMargin="298.6786" TouchEnable="True" FontSize="20" ButtonText="冰" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill202" ActionTag="-1156533905" Tag="262" IconVisible="False" LeftMargin="-1135.6731" RightMargin="1035.6731" TopMargin="-328.6786" BottomMargin="298.6786" TouchEnable="True" FontSize="20" ButtonText="冰" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-1135.6731" Y="298.6786" />
@@ -50,7 +50,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="202_t" ActionTag="1393069847" Tag="263" IconVisible="False" LeftMargin="-1016.2811" RightMargin="746.2811" TopMargin="-492.1304" BottomMargin="222.1304" IsCustomSize="True" FontSize="20" LabelText="技能202:（10消耗，距离2）&#xA;寒冰标记&#xA;对敌方单位造成攻击力60%的伤害，并降低移动力2持续两回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill202_t" ActionTag="1393069847" Tag="263" IconVisible="False" LeftMargin="-1016.2811" RightMargin="746.2811" TopMargin="-492.1304" BottomMargin="222.1304" IsCustomSize="True" FontSize="20" LabelText="技能202:（10消耗，距离2）&#xA;寒冰标记&#xA;对敌方单位造成攻击力60%的伤害，并降低移动力2持续两回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="-1016.2811" Y="222.1304" />
@@ -62,7 +62,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="203" ActionTag="-1408725208" Tag="264" IconVisible="False" LeftMargin="-1137.7883" RightMargin="1037.7883" TopMargin="-25.3868" BottomMargin="-4.6132" TouchEnable="True" FontSize="20" ButtonText="木" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill203" ActionTag="-1408725208" Tag="264" IconVisible="False" LeftMargin="-1137.7883" RightMargin="1037.7883" TopMargin="-25.3868" BottomMargin="-4.6132" TouchEnable="True" FontSize="20" ButtonText="木" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-1137.7883" Y="-4.6132" />
@@ -78,10 +78,10 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="203_t" ActionTag="-605889089" Tag="265" IconVisible="False" LeftMargin="-1016.9557" RightMargin="746.9557" TopMargin="-188.1133" BottomMargin="-81.8867" IsCustomSize="True" FontSize="20" LabelText="技能203:（10消耗，距离2）&#xA;森林标记&#xA;对敌方单位造成攻击力80%的伤害，并使其流血三回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill203_t" ActionTag="-605889089" Tag="265" IconVisible="False" LeftMargin="-1016.9559" RightMargin="746.9559" TopMargin="-189.9745" BottomMargin="-80.0255" IsCustomSize="True" FontSize="20" LabelText="技能203:（10消耗，距离2）&#xA;森林标记&#xA;对敌方单位造成攻击力80%的伤害，并使其流血三回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
-            <Position X="-1016.9557" Y="-81.8867" />
+            <Position X="-1016.9559" Y="-80.0255" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
@@ -90,7 +90,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="205" ActionTag="576878279" Tag="266" IconVisible="False" LeftMargin="-576.7155" RightMargin="476.7155" TopMargin="-644.4036" BottomMargin="614.4036" TouchEnable="True" FontSize="20" ButtonText="异次元洞" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill204" ActionTag="576878279" Tag="266" IconVisible="False" LeftMargin="-576.7155" RightMargin="476.7155" TopMargin="-644.4036" BottomMargin="614.4036" TouchEnable="True" FontSize="20" ButtonText="异次元洞" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-576.7155" Y="614.4036" />
@@ -106,7 +106,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="205_t" ActionTag="-1034878925" Tag="267" IconVisible="False" LeftMargin="-457.3352" RightMargin="187.3352" TopMargin="-807.8560" BottomMargin="537.8560" IsCustomSize="True" FontSize="20" LabelText="技能204:（20消耗，距离3）&#xA;通过异次元洞，对敌人突然进行攻击。&#xA;无视防御，对目标造成攻击力400%的伤害。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill204_t" ActionTag="-1034878925" Tag="267" IconVisible="False" LeftMargin="-457.3352" RightMargin="187.3352" TopMargin="-807.8560" BottomMargin="537.8560" IsCustomSize="True" FontSize="20" LabelText="技能204:（20消耗，距离3）&#xA;通过异次元洞，对敌人突然进行攻击。&#xA;无视防御，对目标造成攻击力400%的伤害。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="-457.3352" Y="537.8560" />
@@ -118,7 +118,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="206" ActionTag="271020393" Tag="268" IconVisible="False" LeftMargin="-582.8824" RightMargin="482.8824" TopMargin="-340.8222" BottomMargin="310.8222" TouchEnable="True" FontSize="20" ButtonText="神圣之火" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill205" ActionTag="271020393" Tag="268" IconVisible="False" LeftMargin="-582.8824" RightMargin="482.8824" TopMargin="-340.8222" BottomMargin="310.8222" TouchEnable="True" FontSize="20" ButtonText="神圣之火" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-582.8824" Y="310.8222" />
@@ -134,7 +134,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="206_t" ActionTag="1053462301" Tag="269" IconVisible="False" LeftMargin="-463.4968" RightMargin="193.4968" TopMargin="-504.2746" BottomMargin="234.2746" IsCustomSize="True" FontSize="20" LabelText="技能205:（20消耗，距离2）&#xA;用神秘的火焰烧尽对手进行攻击。&#xA;对范围内所有敌方单位造成攻击力180%的伤害，并流血三回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill205_t" ActionTag="1053462301" Tag="269" IconVisible="False" LeftMargin="-463.4968" RightMargin="193.4968" TopMargin="-504.2746" BottomMargin="234.2746" IsCustomSize="True" FontSize="20" LabelText="技能205:（20消耗，距离2）&#xA;用神秘的火焰烧尽对手进行攻击。&#xA;对范围内所有敌方单位造成攻击力180%的伤害，并流血三回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="-463.4968" Y="234.2746" />
@@ -146,7 +146,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="207" ActionTag="-925542387" Tag="270" IconVisible="False" LeftMargin="-585.0016" RightMargin="485.0016" TopMargin="-37.5294" BottomMargin="7.5294" TouchEnable="True" FontSize="20" ButtonText="水之波动" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill206" ActionTag="-925542387" Tag="270" IconVisible="False" LeftMargin="-585.0016" RightMargin="485.0016" TopMargin="-37.5294" BottomMargin="7.5294" TouchEnable="True" FontSize="20" ButtonText="水之波动" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-585.0016" Y="7.5294" />
@@ -162,7 +162,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="207_t" ActionTag="1649955989" Tag="271" IconVisible="False" LeftMargin="-464.1737" RightMargin="194.1737" TopMargin="-202.4290" BottomMargin="-67.5710" IsCustomSize="True" FontSize="20" LabelText="技能206:（20消耗，距离2）&#xA;用水的震动攻击对手。&#xA;对范围内所有敌方单位造成攻击力120%的伤害，并眩晕一回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill206_t" ActionTag="1649955989" Tag="271" IconVisible="False" LeftMargin="-464.1737" RightMargin="194.1737" TopMargin="-202.4290" BottomMargin="-67.5710" IsCustomSize="True" FontSize="20" LabelText="技能206:（20消耗，距离2）&#xA;用水的震动攻击对手。&#xA;对范围内所有敌方单位造成攻击力120%的伤害，并眩晕一回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="-464.1737" Y="-67.5710" />
@@ -174,7 +174,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="104_t" ActionTag="-1202542166" Tag="288" IconVisible="False" LeftMargin="824.6598" RightMargin="-1094.6598" TopMargin="116.9214" BottomMargin="-386.9214" IsCustomSize="True" FontSize="20" LabelText="技能104:（35消耗）&#xA;如磐石一般坚硬。&#xA;提升自身防御力，减伤50%，并反弹所有伤害，持续四回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill104_t" ActionTag="-1202542166" Tag="288" IconVisible="False" LeftMargin="824.6598" RightMargin="-1094.6598" TopMargin="116.9214" BottomMargin="-386.9214" IsCustomSize="True" FontSize="20" LabelText="技能104:（35消耗）&#xA;如磐石一般坚硬。&#xA;提升自身防御力，减伤50%，并反弹所有伤害，持续四回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="824.6598" Y="-386.9214" />
@@ -186,7 +186,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="104" ActionTag="236953717" Tag="289" IconVisible="False" LeftMargin="705.8860" RightMargin="-805.8860" TopMargin="281.8187" BottomMargin="-311.8187" TouchEnable="True" FontSize="20" ButtonText="坚若磐石" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill104" ActionTag="236953717" Tag="289" IconVisible="False" LeftMargin="705.8860" RightMargin="-805.8860" TopMargin="281.8187" BottomMargin="-311.8187" TouchEnable="True" FontSize="20" ButtonText="坚若磐石" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="705.8860" Y="-311.8187" />
@@ -202,7 +202,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="103_t" ActionTag="1685073457" Tag="302" IconVisible="False" LeftMargin="831.4238" RightMargin="-1101.4238" TopMargin="-202.1161" BottomMargin="-67.8839" IsCustomSize="True" FontSize="20" LabelText="技能103:（15消耗，距离1）&#xA;自身HP越少，威力越大。&#xA;对敌方造成攻击力120%以及自身已损失HP的40%的伤害。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill103_t" ActionTag="1685073457" Tag="302" IconVisible="False" LeftMargin="831.4238" RightMargin="-1101.4238" TopMargin="-202.1161" BottomMargin="-67.8839" IsCustomSize="True" FontSize="20" LabelText="技能103:（15消耗，距离1）&#xA;自身HP越少，威力越大。&#xA;对敌方造成攻击力120%以及自身已损失HP的40%的伤害。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="831.4238" Y="-67.8839" />
@@ -214,7 +214,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="103" ActionTag="787327043" Tag="303" IconVisible="False" LeftMargin="710.5925" RightMargin="-810.5925" TopMargin="-39.3896" BottomMargin="9.3896" TouchEnable="True" FontSize="20" ButtonText="起死回生" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill103" ActionTag="787327043" Tag="303" IconVisible="False" LeftMargin="710.5925" RightMargin="-810.5925" TopMargin="-39.3896" BottomMargin="9.3896" TouchEnable="True" FontSize="20" ButtonText="起死回生" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="710.5925" Y="9.3896" />
@@ -230,10 +230,10 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="102_t" ActionTag="-664075695" Tag="304" IconVisible="False" LeftMargin="832.0986" RightMargin="-1102.0986" TopMargin="-508.1931" BottomMargin="238.1931" IsCustomSize="True" FontSize="20" LabelText="技能102:（15消耗，距离3）&#xA;使出全力，对敌方造成大量伤害。&#xA;对敌方单位造成攻击力300%的伤害，并反弹自身伤害的二分之一。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill102_t" ActionTag="-664075695" Tag="304" IconVisible="False" LeftMargin="832.0986" RightMargin="-1102.0986" TopMargin="-510.3661" BottomMargin="240.3661" IsCustomSize="True" FontSize="20" LabelText="技能102:（15消耗，距离3）&#xA;使出全力，对敌方造成大量伤害。&#xA;对敌方单位造成攻击力300%的伤害，并反弹自身伤害的二分之一。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
-            <Position X="832.0986" Y="238.1931" />
+            <Position X="832.0986" Y="240.3661" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
@@ -242,7 +242,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="102" ActionTag="-1975239044" Tag="305" IconVisible="False" LeftMargin="712.7092" RightMargin="-812.7092" TopMargin="-342.6794" BottomMargin="312.6794" TouchEnable="True" FontSize="20" ButtonText="舍身一击" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill102" ActionTag="-1975239044" Tag="305" IconVisible="False" LeftMargin="712.7092" RightMargin="-812.7092" TopMargin="-342.6794" BottomMargin="312.6794" TouchEnable="True" FontSize="20" ButtonText="舍身一击" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="712.7092" Y="312.6794" />
@@ -258,7 +258,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="101_t" ActionTag="1390040507" Tag="306" IconVisible="False" LeftMargin="838.2583" RightMargin="-1108.2583" TopMargin="-809.7092" BottomMargin="539.7092" IsCustomSize="True" FontSize="20" LabelText="技能101:（15消耗，距离2）&#xA;一夫当关，万夫莫开。&#xA;嘲讽距离2以内的敌方单位，强制攻击自身两回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill101_t" ActionTag="1390040507" Tag="306" IconVisible="False" LeftMargin="838.2583" RightMargin="-1108.2583" TopMargin="-809.7092" BottomMargin="539.7092" IsCustomSize="True" FontSize="20" LabelText="技能101:（15消耗，距离2）&#xA;一夫当关，万夫莫开。&#xA;嘲讽距离2以内的敌方单位，强制攻击自身两回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="838.2583" Y="539.7092" />
@@ -270,7 +270,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="101" ActionTag="-780984469" Tag="307" IconVisible="False" LeftMargin="718.8796" RightMargin="-818.8796" TopMargin="-646.2550" BottomMargin="616.2550" TouchEnable="True" FontSize="20" ButtonText="一夫当关" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill101" ActionTag="-780984469" Tag="307" IconVisible="False" LeftMargin="718.8796" RightMargin="-818.8796" TopMargin="-646.2550" BottomMargin="616.2550" TouchEnable="True" FontSize="20" ButtonText="一夫当关" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="718.8796" Y="616.2550" />
@@ -286,7 +286,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="301" ActionTag="1666100938" Tag="333" IconVisible="False" LeftMargin="60.5499" RightMargin="-160.5499" TopMargin="-662.5938" BottomMargin="632.5938" TouchEnable="True" FontSize="20" ButtonText="辅助力量" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill301" ActionTag="1666100938" Tag="333" IconVisible="False" LeftMargin="60.5499" RightMargin="-160.5499" TopMargin="-662.5938" BottomMargin="632.5938" TouchEnable="True" FontSize="20" ButtonText="辅助力量" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="60.5499" Y="632.5938" />
@@ -302,7 +302,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="301_t" ActionTag="-27001111" Tag="334" IconVisible="False" LeftMargin="179.9296" RightMargin="-449.9296" TopMargin="-826.0465" BottomMargin="556.0465" IsCustomSize="True" FontSize="20" LabelText="技能301:（15消耗,距离2）&#xA;知识就是力量。&#xA;对敌人造成攻击力150%的伤害，并提高自身攻击力10%三回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill301_t" ActionTag="-27001111" Tag="334" IconVisible="False" LeftMargin="179.9296" RightMargin="-449.9296" TopMargin="-826.0465" BottomMargin="556.0465" IsCustomSize="True" FontSize="20" LabelText="技能301:（15消耗,距离2）&#xA;知识就是力量。&#xA;对敌人造成攻击力150%的伤害，并提高自身攻击力10%三回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="179.9296" Y="556.0465" />
@@ -314,7 +314,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="302" ActionTag="479540538" Tag="335" IconVisible="False" LeftMargin="54.3796" RightMargin="-154.3796" TopMargin="-359.0190" BottomMargin="329.0190" TouchEnable="True" FontSize="20" ButtonText="治愈之愿" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill302" ActionTag="479540538" Tag="335" IconVisible="False" LeftMargin="54.3796" RightMargin="-154.3796" TopMargin="-359.0190" BottomMargin="329.0190" TouchEnable="True" FontSize="20" ButtonText="治愈之愿" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="54.3796" Y="329.0190" />
@@ -330,10 +330,10 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="302_t" ActionTag="-1278608594" Tag="336" IconVisible="False" LeftMargin="173.7699" RightMargin="-443.7699" TopMargin="-522.4725" BottomMargin="252.4725" IsCustomSize="True" FontSize="20" LabelText="技能302:（15消耗，距离3）&#xA;回复友方单位自身攻击力150%的HP（无视防御）" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill302_t" ActionTag="-1278608594" Tag="336" IconVisible="False" LeftMargin="173.7698" RightMargin="-443.7698" TopMargin="-525.3109" BottomMargin="255.3109" IsCustomSize="True" FontSize="20" LabelText="技能302:（15消耗，距离3）&#xA;回复友方单位自身攻击力150%的HP（无视防御）" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
-            <Position X="173.7699" Y="252.4725" />
+            <Position X="173.7698" Y="255.3109" />
             <Scale ScaleX="1.0000" ScaleY="1.0000" />
             <CColor A="255" R="255" G="255" B="255" />
             <PrePosition />
@@ -342,7 +342,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="303" ActionTag="716697746" Tag="337" IconVisible="False" LeftMargin="52.2632" RightMargin="-152.2632" TopMargin="-55.7291" BottomMargin="25.7291" TouchEnable="True" FontSize="20" ButtonText="精神冲击" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill303" ActionTag="716697746" Tag="337" IconVisible="False" LeftMargin="52.2632" RightMargin="-152.2632" TopMargin="-55.7291" BottomMargin="25.7291" TouchEnable="True" FontSize="20" ButtonText="精神冲击" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="52.2632" Y="25.7291" />
@@ -358,7 +358,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="303_t" ActionTag="-346451703" Tag="338" IconVisible="False" LeftMargin="173.0944" RightMargin="-443.0944" TopMargin="-218.4539" BottomMargin="-51.5461" IsCustomSize="True" FontSize="20" LabelText="技能303:（15消耗，距离3）&#xA;对直线上的所有敌人造成攻击力150%的伤害，并眩晕一回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill303_t" ActionTag="-346451703" Tag="338" IconVisible="False" LeftMargin="173.0944" RightMargin="-443.0944" TopMargin="-218.4539" BottomMargin="-51.5461" IsCustomSize="True" FontSize="20" LabelText="技能303:（15消耗，距离3）&#xA;对直线上的所有敌人造成攻击力150%的伤害，并眩晕一回合。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="173.0944" Y="-51.5461" />
@@ -370,7 +370,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="304" ActionTag="885838383" Tag="351" IconVisible="False" LeftMargin="47.5579" RightMargin="-147.5579" TopMargin="265.4805" BottomMargin="-295.4805" TouchEnable="True" FontSize="20" ButtonText="宇宙力量" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill304" ActionTag="885838383" Tag="351" IconVisible="False" LeftMargin="47.5579" RightMargin="-147.5579" TopMargin="265.4805" BottomMargin="-295.4805" TouchEnable="True" FontSize="20" ButtonText="宇宙力量" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="47.5579" Y="-295.4805" />
@@ -386,7 +386,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="304_t" ActionTag="1754826921" Tag="352" IconVisible="False" LeftMargin="168.3884" RightMargin="-438.3884" TopMargin="100.5845" BottomMargin="-370.5845" IsCustomSize="True" FontSize="20" LabelText="技能304:（35消耗，距离3）&#xA;对该方向范围内，所有敌方单位造成攻击力200%的伤害。&#xA;所有友方单位回复攻击力300%的HP。&#xA;无视防御。&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill304_t" ActionTag="1754826921" Tag="352" IconVisible="False" LeftMargin="168.3884" RightMargin="-438.3884" TopMargin="100.5845" BottomMargin="-370.5845" IsCustomSize="True" FontSize="20" LabelText="技能304:（35消耗，距离3）&#xA;对该方向范围内，所有敌方单位造成攻击力200%的伤害。&#xA;所有友方单位回复攻击力300%的HP。&#xA;无视防御。&#xA;" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="168.3884" Y="-370.5845" />
@@ -454,7 +454,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="401_0" ActionTag="845517702" Tag="590" IconVisible="False" LeftMargin="-1701.2847" RightMargin="1601.2847" TopMargin="91.2630" BottomMargin="-121.2630" TouchEnable="True" FontSize="20" ButtonText="治疗光环" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="401_0" ActionTag="845517702" Tag="590" IconVisible="False" LeftMargin="-1701.2847" RightMargin="1601.2847" TopMargin="91.2630" BottomMargin="-121.2630" TouchEnable="True" FontSize="20" ButtonText="能量光环" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-1701.2847" Y="-121.2630" />
@@ -482,7 +482,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="207_0" ActionTag="438155290" Tag="592" IconVisible="False" LeftMargin="-577.2157" RightMargin="477.2157" TopMargin="242.5808" BottomMargin="-272.5808" TouchEnable="True" FontSize="20" ButtonText="汲取力量" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="skill207" ActionTag="438155290" Tag="592" IconVisible="False" LeftMargin="-577.2157" RightMargin="477.2157" TopMargin="242.5808" BottomMargin="-272.5808" TouchEnable="True" FontSize="20" ButtonText="汲取力量" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-577.2157" Y="-272.5808" />
@@ -498,7 +498,7 @@
             <OutlineColor A="255" R="255" G="0" B="0" />
             <ShadowColor A="255" R="110" G="110" B="110" />
           </AbstractNodeData>
-          <AbstractNodeData Name="207_t_0" ActionTag="2143845583" Tag="593" IconVisible="False" LeftMargin="-456.3876" RightMargin="186.3876" TopMargin="77.6812" BottomMargin="-347.6812" IsCustomSize="True" FontSize="20" LabelText="技能207:（20消耗，距离2）&#xA;汲取对手的力量回复自身。&#xA;无视防御，对敌方单位造成攻击力200%的伤害，并回复相同的HP。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
+          <AbstractNodeData Name="skill207_t" ActionTag="2143845583" Tag="593" IconVisible="False" LeftMargin="-456.3876" RightMargin="186.3876" TopMargin="77.6812" BottomMargin="-347.6812" IsCustomSize="True" FontSize="20" LabelText="技能207:（20消耗，距离2）&#xA;汲取对手的力量回复自身。&#xA;无视防御，对敌方单位造成攻击力200%的伤害，并回复相同的HP。" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ShadowEnabled="True" ctype="TextObjectData">
             <Size X="270.0000" Y="270.0000" />
             <AnchorPoint />
             <Position X="-456.3876" Y="-347.6812" />
@@ -510,7 +510,7 @@
             <OutlineColor A="255" R="255" G="255" B="255" />
             <ShadowColor A="255" R="0" G="0" B="0" />
           </AbstractNodeData>
-          <AbstractNodeData Name="201_0" ActionTag="-1502234113" Tag="594" IconVisible="False" LeftMargin="-1125.9502" RightMargin="1025.9502" TopMargin="-1028.8580" BottomMargin="998.8580" TouchEnable="True" FontSize="20" ButtonText="凝神" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
+          <AbstractNodeData Name="201_0" ActionTag="-1502234113" Tag="594" IconVisible="False" LeftMargin="-1125.9502" RightMargin="1025.9502" TopMargin="-1028.8579" BottomMargin="998.8580" TouchEnable="True" FontSize="20" ButtonText="凝神" Scale9Enable="True" LeftEage="15" RightEage="15" TopEage="11" BottomEage="11" Scale9OriginX="15" Scale9OriginY="11" Scale9Width="16" Scale9Height="14" ShadowOffsetX="2.0000" ShadowOffsetY="-2.0000" ctype="ButtonObjectData">
             <Size X="100.0000" Y="30.0000" />
             <AnchorPoint />
             <Position X="-1125.9502" Y="998.8580" />
